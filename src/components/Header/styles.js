@@ -22,6 +22,29 @@ export const Nav = styled.nav`
     list-style: none;
     li {
       margin: 0 10px;
+
+      span {
+        color: white;
+        cursor: pointer;
+        padding: 0 0 10px 0;
+
+        &:hover {
+          border-bottom: 1px solid white;
+        }
+      }
+
+      div {
+        display: none;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .active {
+        display: flex;
+        position: absolute;
+      }
+
       a {
         text-decoration: none;
         color: white;

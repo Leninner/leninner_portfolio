@@ -9,7 +9,18 @@ export const HeaderComponent = () => {
       <Nav>
         <ul>
           <li>
-            <Link to='#'>Proyectos</Link>
+            <span
+              onClick={() => {
+                document.querySelector('.projects').classList.toggle('active');
+              }}>
+              Projects
+            </span>
+            <div className='projects'>
+              <Link to='/'> All </Link>
+              <Link to='/'> React </Link>
+              <Link to='/'> Javascript Vanilla </Link>
+              <Link to='/'> Automatizaciones </Link>
+            </div>
           </li>
           <li>
             <Link to='#'>Redes Sociales</Link>
@@ -17,7 +28,8 @@ export const HeaderComponent = () => {
           <li>
             <a
               href='https://github.com/Leninner/leninner_portfolio/blob/main/src/utils/english-creative-frontend-developer.pdf'
-              download='frontend_developer_lenin_mazabanda.pdf'>
+              target='_blank'
+              rel='noreferrer'>
               Descargar CV
             </a>
           </li>
