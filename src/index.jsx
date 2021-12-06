@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './routes/App';
+import { UnderConstruction } from './utils/UnderConstruction';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<UnderConstruction />, document.getElementById('root'));
