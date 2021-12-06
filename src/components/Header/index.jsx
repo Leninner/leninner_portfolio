@@ -16,7 +16,7 @@ export const HeaderComponent = () => {
           </li>
           <li>
             <a
-              href='../../utils/english-creative-frontend-developer.pdf'
+              href='https://github.com/Leninner/leninner_portfolio/blob/main/src/utils/english-creative-frontend-developer.pdf'
               download='frontend_developer_lenin_mazabanda.pdf'>
               Descargar CV
             </a>
