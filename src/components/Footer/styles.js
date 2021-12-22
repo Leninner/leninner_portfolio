@@ -9,5 +9,12 @@ export const Footer = styled.footer`
   position: absolute;
   text-align: center;
   font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #666;
+`;
+
+export const Img = styled.img`
+  width: 150px;
 `;

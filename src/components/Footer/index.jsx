@@ -1,10 +1,11 @@
 import React from 'react';
-import { Footer } from './styles';
+import { Footer, Img } from './styles';
+import selecta from '../../utils/companies/selecta.png';
 
 export const FooterComponent = () => {
   return (
     <Footer>
-      <h3>Leninner</h3>
+      <Img src={selecta} alt='selecta' />
     </Footer>
   );
 };
