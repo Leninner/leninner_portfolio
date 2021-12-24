@@ -16,6 +16,7 @@ export const HireMe = styled.a`
   margin-top: -75px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  z-index: 10;
 
   &:hover {
     transform: scale(1.1);
