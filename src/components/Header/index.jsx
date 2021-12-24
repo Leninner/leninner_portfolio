@@ -9,12 +9,7 @@ export const HeaderComponent = () => {
       <Nav>
         <ul>
           <li>
-            <span
-              onClick={() => {
-                document.querySelector('.projects').classList.toggle('active');
-              }}>
-              Projects
-            </span>
+            <span className='projects-li'>Projects</span>
             <div className='projects'>
               <Link to='/'> All </Link>
               <Link to='/'> React </Link>
@@ -23,7 +18,7 @@ export const HeaderComponent = () => {
             </div>
           </li>
           <li>
-            <Link to='#'>Redes Sociales</Link>
+            <Link to='#'>Social Networks</Link>
           </li>
           <li>
             <a

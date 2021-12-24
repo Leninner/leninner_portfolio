@@ -12,6 +12,13 @@ export const Header = styled.header`
   border-radius: 4px;
   background-color: transparent;
   position: fixed;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: white;
+    padding: 0 0 0 50px;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -20,6 +27,17 @@ export const Nav = styled.nav`
     align-items: center;
     justify-content: space-between;
     list-style: none;
+
+    .projects-li:hover div,
+    div:hover div {
+      display: flex;
+      position: absolute;
+      align-items: flex-end;
+      justify-content: center;
+      flex-direction: column;
+      background: #fff;
+    }
+
     li {
       margin: 0 10px;
 
