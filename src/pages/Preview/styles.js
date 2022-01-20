@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { PingAnimation } from '../../styles/Animations';
 
 export const Container = styled.div`
   width: 100%;
@@ -7,16 +8,53 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #333;
 
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
+    text-align: center;
+
+    ::selection {
+      color: black;
+      background: yellow;
+    }
+
+    span {
+      color: rgb(239 68 68);
+      ::selection {
+        color: black;
+        background: yellow;
+      }
+    }
   }
 
-  @media (max-width: 768px) {
+  p {
+    ::selection {
+      color: black;
+      background: yellow;
+    }
+  }
+
+  img {
+    width: 30%;
+    ${PingAnimation()};
+
+    &::selection {
+      color: transparent;
+    }
+  }
+
+  @media (max-width: 600px) {
     h1 {
       font-size: 4rem;
       text-align: center;
       padding: 0;
+    }
+
+    img {
+      top: -50px;
+      left: calc(50% - 175px);
+      width: 90%;
     }
 
     p {
