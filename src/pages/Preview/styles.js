@@ -11,7 +11,7 @@ export const Container = styled.div`
   color: #333;
 
   h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
 
     ::selection {
@@ -37,6 +37,7 @@ export const Container = styled.div`
 
   img {
     width: 30%;
+    margin-top: 1rem;
     ${PingAnimation()};
 
     &::selection {
