@@ -4,6 +4,7 @@ import { PingAnimation } from '../../styles/Animations';
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
