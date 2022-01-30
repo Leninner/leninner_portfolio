@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { SideInAnimation } from '../../styles/Animations';
 
 export const StyledHeader = styled.header`
-  padding: 25px 140px;
+  padding: 25px 140px 25px 125px;
   display: flex;
   justify-content: space-between;
   align-items: center;
