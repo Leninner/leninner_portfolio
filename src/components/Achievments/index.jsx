@@ -18,7 +18,7 @@ export const Achievments = () => {
             <p>Projects complete</p>
           </div>
         </AchievementItem>
-        <AchievementItem>
+        <AchievementItem middle>
           <MdSupervisedUserCircle size='50' color='#069c83' />
           <div>
             <h2>2+</h2>

@@ -8,6 +8,22 @@ export const AchievementsContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media (max-width: 768px) {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+export const AchievmentsData = styled.div`
+  display: flex;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    overflow: auto;
+  }
 `;
 
 export const AchievmentTitle = styled.div`
@@ -22,11 +38,17 @@ export const AchievmentTitle = styled.div`
   span {
     color: white;
   }
-`;
 
-export const AchievmentsData = styled.div`
-  display: flex;
-  width: auto;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 10px;
+
+    h3 {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
 `;
 
 export const AchievementItem = styled.div`
@@ -36,10 +58,18 @@ export const AchievementItem = styled.div`
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0 15px;
+  padding: 0 15px;
+
+  ${({ middle }) =>
+    middle &&
+    `
+    border-left: 1px solid #343a40;
+    border-right: 1px solid #343a40;
+  `}
 
   div {
     margin: 0px 10px;
+
     p {
       font-size: 11px;
       color: #c4c4c4;
