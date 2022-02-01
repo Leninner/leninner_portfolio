@@ -4,10 +4,12 @@ import { SideInAnimation } from '../../styles/Animations';
 
 export const StyledHeader = styled.header`
   padding: 25px 140px 25px 125px;
+  height: 86.75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  background-color: #212428;
   left: 0;
   top: 0;
   right: 0;
@@ -63,7 +65,6 @@ export const NavigationMobile = styled.nav`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
     position: absolute;
     top: 100%;
     width: 100%;
@@ -71,7 +72,6 @@ export const NavigationMobile = styled.nav`
     background: #212428;
     transition: all 0.3s ease-in-out;
     z-index: 1;
-    opacity: 0.5;
     ${SideInAnimation()};
   }
 `;

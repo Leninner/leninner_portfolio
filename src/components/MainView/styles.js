@@ -5,7 +5,11 @@ export const StyledMainView = styled.section`
   height: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 86px;
+  margin-top: 86.75px;px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Me = styled.img`
@@ -14,6 +18,10 @@ export const Me = styled.img`
   object-fit: cover;
   object-position: center;
   outline: 2px solid #6c797d;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const AsideLeft = styled.div`
@@ -47,6 +55,17 @@ export const AsideLeft = styled.div`
     color: #c4c4c4;
     margin: 10px 0 20px 0;
   }
+
+  @media (max-width: 768px) {
+    padding-left: 0;
+    align-items: center;
+
+    h1 {
+      width: 80%;
+      text-align: center;
+      font-size: 3.5rem;
+    }
+  }
 `;
 
 export const ButtonsContainer = styled.div`
@@ -79,6 +98,11 @@ export const SeeProjects = styled.button`
     svg {
       margin-left: 5px;
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+    font-size: 0.8rem;
   }
 `;
 
