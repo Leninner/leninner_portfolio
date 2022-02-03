@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { SideInAnimation } from '../../styles/Animations';
 
 export const StyledHeader = styled.header`
@@ -34,6 +35,23 @@ export const StyledNavLink = styled(NavLink)`
   font-size: 11px;
   letter-spacing: 0.5px;
   color: #c0c0c0;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  margin: 0 16px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #c0c0c0;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     font-size: 20px;
