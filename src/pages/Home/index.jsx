@@ -1,6 +1,7 @@
 import { Header } from '../../components/Header';
 import { MainView } from '../../components/MainView';
 import { Achievments } from '../../components/Achievments';
+import { Services } from '../../components/Services';
 
 export const Home = () => {
   return (
@@ -8,6 +9,7 @@ export const Home = () => {
       <Header />
       <MainView />
       <Achievments />
+      <Services />
     </>
   );
 };
