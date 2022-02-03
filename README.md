@@ -72,7 +72,7 @@ From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Leninner/shoppingify-list
+$ git clone https://github.com/Leninner/leninner_portfolio/
 
 # Install dependencies
 $ npm install
@@ -93,9 +93,4 @@ $ npm start
 - GitHub [@leninner](https://github.com/leninner)
 - Twitter [@\_leninner](https://twitter.com/_leninner)
 
-This project is a shopping list application: https://devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x
-
-> https://www.figma.com/file/kX8FNpYFVLI4ivuEQ6yGgS/Shopping-List
-
-Lenin
 
