@@ -33,6 +33,7 @@ export const AsideLeft = styled.div`
   justify-content: center;
   color: white;
   padding-left: 100px;
+  cursor: default;
 
   span {
     color: #08a185;

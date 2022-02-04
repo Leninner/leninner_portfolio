@@ -18,7 +18,7 @@ export const AchievementsContainer = styled.div`
   }
 `;
 
-export const AchievmentsData = styled.div`
+export const AchievementsData = styled.div`
   display: flex;
 
   @media (max-width: 768px) {
@@ -27,10 +27,11 @@ export const AchievmentsData = styled.div`
   }
 `;
 
-export const AchievmentTitle = styled.div`
+export const AchievementTitle = styled.div`
   width: 22%;
   color: #03bd9a;
   font-weight: bold;
+  cursor: default;
 
   h3 {
     font-size: 2rem;

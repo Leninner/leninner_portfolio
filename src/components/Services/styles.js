@@ -20,6 +20,7 @@ export const Title = styled.h1`
   color: #fff;
   text-align: center;
   margin-bottom: 1.5rem;
+  cursor: default;
 `;
 
 export const ServicesBoxContainer = styled.div`

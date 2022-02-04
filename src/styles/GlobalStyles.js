@@ -13,4 +13,35 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background: #212428;
   }
+
+  &::selection {
+    background: transparent;
+  }
+
+
+  &::-webkit-scrollbar {
+      -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:vertical {
+      width:10px;
+  }
+
+  &::-webkit-scrollbar-button:increment,&::-webkit-scrollbar-button {
+      display: none;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+      height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background-color: #414141;
+      border-radius: 20px;
+      border: 2px solid transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+      border-radius: 10px;
+  }
 `;

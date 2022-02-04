@@ -1,6 +1,6 @@
 import { Header } from '../../components/Header';
 import { MainView } from '../../components/MainView';
-import { Achievments } from '../../components/Achievments';
+import { Achievements } from '../../components/Achievements';
 import { Services } from '../../components/Services';
 
 export const Home = () => {
@@ -8,7 +8,7 @@ export const Home = () => {
     <>
       <Header />
       <MainView />
-      <Achievments />
+      <Achievements />
       <Services />
     </>
   );
