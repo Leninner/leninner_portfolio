@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ServiceBoxContainer = styled.div`
   width: 350px;
-  height: 200px;
+  padding: 30px 10px;
   background-color: #2a2d2e;
   margin: 5px;
   color: white;
@@ -10,7 +10,6 @@ export const ServiceBoxContainer = styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
-  padding: 10px;
 
   svg {
     color: #03bd9a;

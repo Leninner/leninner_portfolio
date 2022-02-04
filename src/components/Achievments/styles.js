@@ -8,6 +8,7 @@ export const AchievementsContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 10px 0;
 
   @media (max-width: 768px) {
     height: auto;
