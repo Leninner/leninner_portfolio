@@ -29,10 +29,12 @@ export const Header = () => {
         <StyledLink to='services' spy={true} smooth={true} offset={-70} duration={500}>
           SERVICES
         </StyledLink>
-        <StyledLink to='#about'>ABOUT ME</StyledLink>
-        <StyledLink to='#skills'>SKILLS</StyledLink>
-        <StyledLink to='#projects'>PROJECTS</StyledLink>
-        <StyledLink to='#contact'>CONTACT</StyledLink>
+        <StyledLink to='about' spy={true} smooth={true} offset={-70} duration={500}>
+          ABOUT ME
+        </StyledLink>
+        <StyledLink to='skills'>SKILLS</StyledLink>
+        <StyledLink to='projects'>PROJECTS</StyledLink>
+        <StyledLink to='contact'>CONTACT</StyledLink>
       </NavigationDesktop>
 
       {isOpen ? <AiOutlineClose size='25' onClick={handleClick} /> : <AiOutlineMenu size='25' onClick={handleClick} />}
