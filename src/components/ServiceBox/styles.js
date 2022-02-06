@@ -18,6 +18,10 @@ export const ServiceBoxContainer = styled.div`
       color: #2a2d2e;
     }
 
+    li {
+      font-weight: bold;
+    }
+
     a {
       text-decoration: underline;
     }
