@@ -14,6 +14,7 @@ export const StyledHeader = styled.header`
   left: 0;
   top: 0;
   right: 0;
+  z-index: 10;
 
   svg {
     color: white;
@@ -89,7 +90,6 @@ export const NavigationMobile = styled.nav`
     height: 100vh;
     background: #212428;
     transition: all 0.3s ease-in-out;
-    z-index: 1;
     ${SideInAnimation()};
   }
 `;

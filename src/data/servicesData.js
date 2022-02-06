@@ -14,12 +14,12 @@ export const servicesData = [
     title: 'Responsive Design',
     description: 'We can create a website that is easy to use and easy to navigate in all devices.',
     image: <MdAod size={size} />,
-    features: ['Latest web technology', 'Easy to scaling', 'Very user friendly'],
+    features: ['Modern and responsive', 'Great user experience', 'Very easy to use'],
   },
   {
-    title: 'E-commerces',
-    description: 'We can do e-commerce, which is a type of business where you can sell products online.',
+    title: 'SEO',
+    description: 'Increase your score in search engines, to reach more visitors who can be converted into customers.',
     image: <MdAddShoppingCart size={size} />,
-    features: ['Latest web technology', 'Easy to scaling', 'Very user friendly'],
+    features: ['Use best keywords', 'Add the perfect metadata', 'Use the best practices in demand'],
   },
 ];

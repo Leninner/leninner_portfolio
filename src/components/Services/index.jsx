@@ -9,8 +9,8 @@ export const Services = () => {
         <span>Ser</span>vices
       </Title>
       <ServicesBoxContainer>
-        {servicesData.map((value) => (
-          <ServiceBox key={value} {...value} />
+        {servicesData.map((value, index) => (
+          <ServiceBox key={index} {...value} />
         ))}
       </ServicesBoxContainer>
     </>

@@ -34,6 +34,21 @@ export const StyledAboutMe = styled.div`
       padding: 10px;
     }
   }
+
+  @media (max-width: 768px) {
+    width: 80%;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      margin-top: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -64,5 +79,11 @@ export const ImgContainer = styled.div`
       -webkit-filter: grayscale(80%);
       filter: grayscale(80%);
     }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+    height: 300px;
   }
 `;

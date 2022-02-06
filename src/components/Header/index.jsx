@@ -17,6 +17,7 @@ export const Header = () => {
       delay: 100,
       smooth: true,
     });
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -39,17 +40,25 @@ export const Header = () => {
 
       {isOpen ? <AiOutlineClose size='25' onClick={handleClick} /> : <AiOutlineMenu size='25' onClick={handleClick} />}
 
-      <NavigationMobile onClick={handleClick} isOpen={isOpen}>
-        <StyledNavLink to='/home'>HOME</StyledNavLink>
-        <StyledLink to='services' spy={true} smooth={true} offset={-70} duration={500}>
+      <NavigationMobile isOpen={isOpen}>
+        <StyledNavLink to='/home' onClick={handleScroll}>
+          HOME
+        </StyledNavLink>
+        <StyledLink to='services' spy={true} smooth={true} offset={-70} duration={500} onClick={handleClick}>
           SERVICES
         </StyledLink>
-        <StyledLink to='about' spy={true} smooth={true} offset={-70} duration={500}>
+        <StyledLink to='about' spy={true} smooth={true} offset={-70} duration={500} onClick={handleClick}>
           ABOUT ME
         </StyledLink>
-        <StyledLink to='#skills'>SKILLS</StyledLink>
-        <StyledLink to='#projects'>PROJECTS</StyledLink>
-        <StyledNavLink to='#contact'>CONTACT</StyledNavLink>
+        <StyledLink to='skills' onClick={handleClick}>
+          SKILLS
+        </StyledLink>
+        <StyledLink to='projects' onClick={handleClick}>
+          PROJECTS
+        </StyledLink>
+        <StyledNavLink to='contact' onClick={handleClick}>
+          CONTACT
+        </StyledNavLink>
       </NavigationMobile>
     </StyledHeader>
   );
