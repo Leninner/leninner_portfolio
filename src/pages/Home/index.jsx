@@ -11,10 +11,10 @@ export const Home = () => {
       <Header />
       <MainView />
       <Achievements />
-      <SectionContainer id='services'>
+      <SectionContainer id='services' bgColor='#212428'>
         <Services />
       </SectionContainer>
-      <SectionContainer id='about'>
+      <SectionContainer id='about' bgColor='#1c1e20'>
         <AboutMe />
       </SectionContainer>
     </>

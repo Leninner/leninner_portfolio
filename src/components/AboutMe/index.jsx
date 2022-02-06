@@ -1,20 +1,21 @@
-import { StyledAboutMe } from './styles';
+import { StyledAboutMe, ImgContainer } from './styles';
 
 export const AboutMe = () => {
   return (
     <StyledAboutMe>
-      <img
-        src='https://images.unsplash.com/photo-1601233749202-95d04d5b3c00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=838&q=80'
-        alt=''
-      />
+      <ImgContainer>
+        <img
+          src='https://images.unsplash.com/photo-1601233749202-95d04d5b3c00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=838&q=80'
+          alt=''
+        />
+      </ImgContainer>
+
       <div>
         <h1>
           <span>About</span> Me
         </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci vel explicabo expedita possimus
-          quod fugiat sed, ducimus temporibus impedit ad? Amet aliquam modi itaque nihil iste ad aut cum?
-        </p>
+        <p>I am Lenin, Frontend Developer based in Ecuador. I enjoy creating beautiful websites for the internet.</p>
+        <p>My goal is to always build scalable products and performant code.</p>
         <table>
           <tbody>
             <tr>
@@ -28,7 +29,7 @@ export const AboutMe = () => {
             <tr>
               <td>Address</td>
               <td>
-                <a href='#'>
+                <a href='/'>
                   <span>123 Main St</span>
                   <span>Anytown, CA 12345</span>
                 </a>
@@ -37,7 +38,7 @@ export const AboutMe = () => {
             <tr>
               <td>Phone</td>
               <td>
-                <a href='#'>
+                <a href='/'>
                   <span>123-456-7890</span>
                 </a>
               </td>
@@ -45,7 +46,7 @@ export const AboutMe = () => {
             <tr>
               <td>Email</td>
               <td>
-                <a href='#'>
+                <a href='/'>
                   <span>mazabandalenin180@gmail.com</span>
                 </a>
               </td>

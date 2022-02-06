@@ -1,14 +1,10 @@
 import styled from 'styled-components';
 
 export const StyledAboutMe = styled.div`
-  width: 50%;
+  width: 70%;
   display: flex;
-
-  img {
-    width: 50%;
-    margin: 0 5vh 0 0;
-    object-fit: cover;
-  }
+  color: #9c9c9c;
+  cursor: default;
 
   h1 {
     font-size: 2.5rem;
@@ -36,6 +32,37 @@ export const StyledAboutMe = styled.div`
 
     td {
       padding: 10px;
+    }
+  }
+`;
+
+export const ImgContainer = styled.div`
+  width: 75%;
+  padding: 20px 0;
+  margin: 0 10vh 0 0;
+  object-fit: cover;
+  border: 0.35vh solid #03bd9a;
+  position: relative;
+  cursor: pointer;
+  border-radius: 24px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    transition: 0.3s;
+    border-radius: 24px;
+  }
+
+  &:hover {
+    img {
+      top: -10px;
+      right: -10px;
+      -webkit-filter: grayscale(80%);
+      filter: grayscale(80%);
     }
   }
 `;
