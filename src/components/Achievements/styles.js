@@ -2,13 +2,12 @@ import styled from 'styled-components';
 
 export const AchievementsContainer = styled.div`
   width: 100%;
-  height: 100px;
   border-top: 1px solid #343a40;
   border-bottom: 1px solid #343a40;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px 0;
+  padding: 5vh 0;
 
   @media (max-width: 768px) {
     height: auto;
@@ -35,6 +34,16 @@ export const AchievementTitle = styled.div`
 
   h3 {
     font-size: 2rem;
+    position: relative;
+
+    svg {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(25deg);
+      width: 80%;
+    }
   }
 
   span {
@@ -49,6 +58,12 @@ export const AchievementTitle = styled.div`
       width: 80%;
       margin: 0 auto;
       text-align: center;
+
+      svg {
+        top: -10vh;
+        left: 1vh;
+        width: 40%;
+      }
     }
   }
 `;

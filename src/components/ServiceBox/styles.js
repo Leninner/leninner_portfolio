@@ -3,12 +3,14 @@ import styled from 'styled-components';
 export const ServiceBoxContainer = styled.div`
   width: 350px;
   padding: 25px;
-  background-color: #2a2d2e;
+  background: rgba(255, 255, 255, 0.05);
   margin: 15px;
   color: white;
   transition: 0.3s ease-out;
   cursor: pointer;
   border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: saturate(180%) blur(14px);
 
   &:hover {
     background-color: white;

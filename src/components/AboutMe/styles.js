@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledAboutMe = styled.div`
   width: 70%;
   display: flex;
-  color: #9c9c9c;
+  color: white;
   cursor: default;
 
   h1 {
@@ -18,6 +18,7 @@ export const StyledAboutMe = styled.div`
 
   p {
     margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 0.2rem #03bd9a);
   }
 
   table {

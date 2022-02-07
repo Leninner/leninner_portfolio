@@ -1,4 +1,13 @@
-import { Me, AsideLeft, StyledMainView, SeeProjects, ButtonIcons, ButtonsContainer, ButtonLinkedIn } from './styles';
+import {
+  Me,
+  AsideLeft,
+  StyledMainView,
+  SeeProjects,
+  ButtonIcons,
+  ButtonsContainer,
+  ButtonLinkedIn,
+  Span,
+} from './styles';
 import { MdArrowRightAlt } from 'react-icons/md';
 import { AiFillGithub } from 'react-icons/ai';
 import { BsMedium } from 'react-icons/bs';
@@ -7,7 +16,7 @@ export const MainView = () => {
   return (
     <StyledMainView>
       <AsideLeft>
-        <span>Hello, I'm</span>
+        <Span>Hello, I'm</Span>
         <h1>Lenin Mazabanda</h1>
         <h4>Front-end Developer</h4>
 

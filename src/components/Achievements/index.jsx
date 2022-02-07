@@ -1,5 +1,4 @@
 import { AchievementsContainer, AchievementTitle, AchievementsData, AchievementItem } from './styles';
-
 import { MdVerified, MdAddTask, MdSupervisedUserCircle } from 'react-icons/md';
 
 export const Achievements = () => {

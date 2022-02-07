@@ -35,18 +35,12 @@ export const AsideLeft = styled.div`
   padding-left: 100px;
   cursor: default;
 
-  span {
-    color: #08a185;
-    letter-spacing: 1px;
-    font-size: 21.5px;
-    margin-bottom: 10px;
-  }
-
   h1 {
     font-size: 5rem;
     width: 50%;
     line-height: 4.5rem;
     font-weight: 900;
+    filter: drop-shadow(0 0 0.3rem #03bd9a);
   }
 
   h4 {
@@ -66,6 +60,22 @@ export const AsideLeft = styled.div`
       text-align: center;
       font-size: 3.5rem;
     }
+  }
+`;
+
+export const Span = styled.span`
+  color: #08a185;
+  letter-spacing: 1px;
+  font-size: 21.5px;
+  margin-bottom: 10px;
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(25deg);
+    width: 50%;
   }
 `;
 
@@ -95,6 +105,7 @@ export const SeeProjects = styled.button`
     margin: 0;
     display: flex;
     align-items: center;
+    /* filter: drop-shadow(0 0 0.3rem #03bd9a); */
 
     svg {
       margin-left: 5px;

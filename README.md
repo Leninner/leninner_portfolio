@@ -86,11 +86,11 @@ $ npm start
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example -->
 
 - Digital Ocean - [React Scroll](https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolling-in-react-es)
+- Svg to React Component - [Svgr](https://react-svgr.com/playground/)
+- Svg Minifier - [Svgomg](https://jakearchibald.github.io/svgomg/)
 
 ## Contact
 
 - Website [your-website.com](https://leninner.vercel.app/)
 - GitHub [@leninner](https://github.com/leninner)
 - Twitter [@\_leninner](https://twitter.com/_leninner)
-
-
