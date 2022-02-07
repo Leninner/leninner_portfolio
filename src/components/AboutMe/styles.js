@@ -76,8 +76,8 @@ export const ImgContainer = styled.div`
     img {
       top: -10px;
       right: -10px;
-      -webkit-filter: grayscale(80%);
-      filter: grayscale(80%);
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
     }
   }
 
