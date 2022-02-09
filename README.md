@@ -10,11 +10,7 @@
   <h3>
     <a href="https://leninner.vercel.app/home">
       Demo
-    </a>
-    <span> | </span>
-    <a href="https://github.com/Leninner/leninner_portfolio/">
-      Code
-    </a>
+     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x">
       Feedback
@@ -40,7 +36,7 @@
 
 ![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+This portfolio is very awesome. In this I will push my featured projects.
 
 - Where can I see your demo?
 - What was your experience?
