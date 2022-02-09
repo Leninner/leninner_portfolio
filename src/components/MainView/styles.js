@@ -85,6 +85,10 @@ export const ButtonsContainer = styled.div`
 
   button {
     cursor: pointer;
+
+    &:hover {
+      filter: drop-shadow(0 0 0.2rem #03bd9a);
+    }
   }
 `;
 
@@ -110,6 +114,10 @@ export const SeeProjects = styled.button`
     svg {
       margin-left: 5px;
     }
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 0.2rem #03bd9a);
   }
 
   @media (max-width: 768px) {

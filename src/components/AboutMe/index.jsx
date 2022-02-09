@@ -1,4 +1,5 @@
-import { StyledAboutMe, ImgContainer } from './styles';
+import { StyledAboutMe, ImgContainer, MeInfo, CvButton } from './styles';
+import { MdArrowRightAlt } from 'react-icons/md';
 
 export const AboutMe = () => {
   return (
@@ -16,43 +17,36 @@ export const AboutMe = () => {
         </h1>
         <p>I am Lenin, Frontend Developer based in Ecuador. I enjoy creating beautiful websites for the internet.</p>
         <p>My goal is to always build scalable products and performant code.</p>
-        <table>
-          <tbody>
-            <tr>
-              <td>Name</td>
-              <td>John Doe</td>
-            </tr>
-            <tr>
-              <td>Age</td>
-              <td>30</td>
-            </tr>
-            <tr>
-              <td>Address</td>
-              <td>
-                <a href='/'>
-                  <span>123 Main St</span>
-                  <span>Anytown, CA 12345</span>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Phone</td>
-              <td>
-                <a href='/'>
-                  <span>123-456-7890</span>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Email</td>
-              <td>
-                <a href='/'>
-                  <span>mazabandalenin180@gmail.com</span>
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <MeInfo>
+          <section>
+            <div>
+              <span>Name:</span>
+              <p>Lenin Mazabanda</p>
+            </div>
+            <div>
+              <span>Email:</span>
+              <a href='/'>
+                <p>mazabandalenin180@gmail.com</p>
+              </a>
+            </div>
+          </section>
+          <section>
+            <div>
+              <span>Phone:</span>
+              <p>+593 979424062</p>
+            </div>
+            <div>
+              <span>Twitter:</span>
+              <a href='/'>
+                <p>@_leninner</p>
+              </a>
+            </div>
+          </section>
+        </MeInfo>
+        <CvButton>
+          <p>Descargar CV</p>
+          <MdArrowRightAlt size='32' />
+        </CvButton>
       </div>
     </StyledAboutMe>
   );

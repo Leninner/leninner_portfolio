@@ -21,25 +21,18 @@ export const StyledAboutMe = styled.div`
     filter: drop-shadow(0 0 0.2rem #03bd9a);
   }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin-bottom: 1.5rem;
-
-    tr {
-      border-bottom: 1px solid #ccc;
-    }
-
-    td {
-      padding: 10px;
-    }
-  }
-
   @media (max-width: 768px) {
     width: 80%;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     h1 {
       margin-top: 1.5rem;
@@ -86,5 +79,65 @@ export const ImgContainer = styled.div`
     width: 100%;
     margin: 0;
     height: 300px;
+  }
+`;
+
+export const MeInfo = styled.div`
+  display: flex;
+  justify-content: space-between;
+  background: rgb(28, 30, 32);
+  background: linear-gradient(0deg, rgba(28, 30, 32, 1) 60%, rgba(41, 44, 46, 1) 100%);
+  border-radius: 2vh;
+  padding: 2vh 4vh;
+
+  div {
+    margin: 0 0 3vh 0;
+  }
+
+  span {
+    color: #03bd9a;
+    filter: drop-shadow(0 0 0.2rem #03bd9a);
+  }
+
+  p {
+    margin: 1vh 0 0 0;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+
+export const CvButton = styled.button`
+  padding: 1vh 4.5vh;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  background: #1c1e20;
+  border: 0.1vh solid #03bd9a;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 2vh;
+
+  svg {
+    margin-left: 1vh;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 0.2rem #03bd9a);
+  }
+
+  @media (max-width: 768px) {
+    padding: 1vh 3vh;
+    font-size: 1rem;
   }
 `;
