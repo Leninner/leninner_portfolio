@@ -1,5 +1,6 @@
-import { StyledAboutMe, ImgContainer, MeInfo, CvButton } from './styles';
+import { StyledAboutMe, ImgContainer, MeInfo, GetCv } from './styles';
 import { MdArrowRightAlt } from 'react-icons/md';
+import cv from '../../utils/cv.pdf';
 
 export const AboutMe = () => {
   return (
@@ -43,10 +44,10 @@ export const AboutMe = () => {
             </div>
           </section>
         </MeInfo>
-        <CvButton>
+        <GetCv download='Frontend_Developer_Lenin_Mazabanda.pdf' href={cv} target='_blank'>
           <p>Descargar CV</p>
           <MdArrowRightAlt size='32' />
-        </CvButton>
+        </GetCv>
       </div>
     </StyledAboutMe>
   );

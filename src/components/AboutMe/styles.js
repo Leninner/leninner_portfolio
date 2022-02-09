@@ -113,16 +113,19 @@ export const MeInfo = styled.div`
   }
 `;
 
-export const CvButton = styled.button`
+export const GetCv = styled.a`
   padding: 1vh 4.5vh;
   border-radius: 24px;
   font-size: 1.1rem;
   background: #1c1e20;
   border: 0.1vh solid #03bd9a;
   color: white;
+  width: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 2vh;
+  text-decoration: none;
 
   svg {
     margin-left: 1vh;
