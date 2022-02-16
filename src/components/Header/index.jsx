@@ -33,9 +33,15 @@ export const Header = () => {
         <StyledLink to='about' spy={true} smooth={true} offset={-70} duration={500}>
           ABOUT ME
         </StyledLink>
-        <StyledLink to='skills'>SKILLS</StyledLink>
-        <StyledLink to='projects'>PROJECTS</StyledLink>
-        <StyledLink to='contact'>CONTACT</StyledLink>
+        <StyledLink to='skills' spy={true} smooth={true} offset={-70} duration={500}>
+          SKILLS
+        </StyledLink>
+        <StyledLink to='projects' spy={true} smooth={true} offset={-70} duration={500}>
+          PROJECTS
+        </StyledLink>
+        <StyledLink to='contact' spy={true} smooth={true} offset={-70} duration={500}>
+          CONTACT
+        </StyledLink>
       </NavigationDesktop>
 
       {isOpen ? <AiOutlineClose size='25' onClick={handleClick} /> : <AiOutlineMenu size='25' onClick={handleClick} />}

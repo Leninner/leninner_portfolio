@@ -35,12 +35,12 @@ export const StyledAboutMe = styled.div`
     }
 
     h1 {
-      margin-top: 1.5rem;
+      margin-top: 1.7rem;
     }
 
     p {
       margin-bottom: 1.5rem;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
   }
 `;
@@ -140,6 +140,7 @@ export const GetCv = styled.a`
   }
 
   @media (max-width: 768px) {
+    width: auto;
     padding: 1vh 3vh;
     font-size: 1rem;
   }
