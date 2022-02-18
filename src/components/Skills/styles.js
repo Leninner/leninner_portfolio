@@ -26,14 +26,30 @@ export const SkillsContainer = styled.div`
 
 export const SkillsItems = styled.div`
   display: flex;
+  width: 80%;
+  overflow: scroll;
+  padding: 2rem 0;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:vertical {
+    width: 0px;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 8px;
+  }
 
   div {
     width: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 1.5rem;
+    margin: 0 2rem;
     justify-content: center;
+    cursor: pointer;
 
     span {
       font-size: 1.2rem;
@@ -52,10 +68,5 @@ export const SkillsItems = styled.div`
         font-weight: 500;
       }
     }
-  }
-
-  @media (max-width: 768px) {
-    width: 100%;
-    overflow: scroll;
   }
 `;

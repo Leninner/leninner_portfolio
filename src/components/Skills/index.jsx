@@ -1,5 +1,5 @@
 import { SkillsContainer, SkillsItems } from './styles';
-import { DiJavascript1, DiHtml5, DiCss3, DiReact } from 'react-icons/di';
+import { DiJavascript1, DiHtml5, DiCss3, DiReact, DiSass, DiGithubBadge } from 'react-icons/di';
 import { SiTailwindcss, SiRedux } from 'react-icons/si';
 
 export const Skills = () => {
@@ -39,7 +39,17 @@ export const Skills = () => {
 
         <div>
           <DiCss3 size={SIZE} color={COLOR} />
-          <span>CSS</span>
+          <span>CSS 3</span>
+        </div>
+
+        <div>
+          <DiSass size={SIZE} color={COLOR} />
+          <span>Sass</span>
+        </div>
+
+        <div>
+          <DiGithubBadge size={SIZE} color={COLOR} />
+          <span>GtiHub</span>
         </div>
       </SkillsItems>
     </SkillsContainer>
