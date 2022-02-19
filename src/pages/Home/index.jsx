@@ -5,6 +5,7 @@ import { Services } from '../../components/Services';
 import { SectionContainer } from '../../containers/SectionContainer';
 import { AboutMe } from '../../components/AboutMe';
 import { Skills } from '../../components/Skills';
+import { Projects } from '../../components/Projects';
 
 export const Home = () => {
   return (
@@ -18,7 +19,12 @@ export const Home = () => {
       <SectionContainer id='about' bgColor='#1c1e20'>
         <AboutMe />
       </SectionContainer>
-      <Skills />
+      <SectionContainer id='skills' bgColor='#212428'>
+        <Skills />
+      </SectionContainer>
+      <SectionContainer id='projects' bgColor='#212428'>
+        <Projects />
+      </SectionContainer>
     </>
   );
 };

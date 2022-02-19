@@ -5,7 +5,6 @@ export const SkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10vh 0;
 
   h1 {
     margin-bottom: 2rem;

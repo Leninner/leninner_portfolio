@@ -7,7 +7,7 @@ export const Skills = () => {
   const COLOR = 'white';
 
   return (
-    <SkillsContainer id='skills'>
+    <SkillsContainer>
       <h1>
         I use Techs <span>in Demand</span>
       </h1>

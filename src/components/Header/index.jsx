@@ -56,13 +56,13 @@ export const Header = () => {
         <StyledLink to='about' spy={true} smooth={true} offset={-70} duration={500} onClick={handleClick}>
           ABOUT ME
         </StyledLink>
-        <StyledLink to='skills' onClick={handleClick}>
+        <StyledLink to='skills' spy={true} smooth={true} offset={-70} duration={500} onClick={handleClick}>
           SKILLS
         </StyledLink>
-        <StyledLink to='projects' onClick={handleClick}>
+        <StyledLink to='projects' spy={true} smooth={true} offset={-70} duration={500} onClick={handleClick}>
           PROJECTS
         </StyledLink>
-        <StyledNavLink to='contact' onClick={handleClick}>
+        <StyledNavLink to='contact' spy={true} smooth={true} offset={-70} duration={500} onClick={handleClick}>
           CONTACT
         </StyledNavLink>
       </NavigationMobile>
