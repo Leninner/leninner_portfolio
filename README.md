@@ -84,9 +84,10 @@ $ npm start
 - Digital Ocean - [React Scroll](https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolling-in-react-es)
 - Svg to React Component - [Svgr](https://react-svgr.com/playground/)
 - Svg Minifier - [Svgomg](https://jakearchibald.github.io/svgomg/)
+- Redux Hooks - [Redux](https://redux.js.org/tutorials/fundamentals/part-5-ui-react#using-redux-with-react)
 
 ## Contact
 
-- Website [your-website.com](https://leninner.vercel.app/)
+- Website [leninner.vercel.app](https://leninner.vercel.app/)
 - GitHub [@leninner](https://github.com/leninner)
 - Twitter [@\_leninner](https://twitter.com/_leninner)
