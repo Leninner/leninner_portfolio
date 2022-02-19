@@ -6,6 +6,7 @@ import { SectionContainer } from '../../containers/SectionContainer';
 import { AboutMe } from '../../components/AboutMe';
 import { Skills } from '../../components/Skills';
 import { Projects } from '../../components/Projects';
+import { SendFeedback } from '../../components/SendFeedback';
 
 export const Home = () => {
   return (
@@ -25,6 +26,7 @@ export const Home = () => {
       <SectionContainer id='projects' bgColor='#212428'>
         <Projects />
       </SectionContainer>
+      <SendFeedback />
     </>
   );
 };
