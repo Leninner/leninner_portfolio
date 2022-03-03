@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const ServiceBoxContainer = styled.div`
   width: 350px;
   padding: 25px;
-  background: rgba(255, 255, 255, 0.05);
+  background: #ffffff10;
   margin: 15px;
   color: white;
   cursor: pointer;
   border-radius: 24px;
-  backdrop-filter: saturate(180%) blur(14px);
+  backdrop-filter: blur(12px) saturate(180%);
 
   &:hover {
     background-color: white;
@@ -35,12 +35,11 @@ export const ServiceBoxContainer = styled.div`
 export const ServiceIntro = styled.div`
   display: flex;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 
   svg {
     color: #03bd9a;
-    width: 20%;
-    margin-right: 3vh;
+    margin: 0 15px 0 10px;
   }
 `;
 

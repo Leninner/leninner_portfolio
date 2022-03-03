@@ -1,10 +1,11 @@
-import { MdCode, MdAod, MdAddShoppingCart } from 'react-icons/md';
+import { MdCode, MdAod } from 'react-icons/md';
+import { FaChalkboardTeacher } from 'react-icons/fa';
 
-const size = '45';
+const size = '40';
 
 export const servicesData = [
   {
-    title: 'Web Development',
+    title: 'Frontend Development',
     description:
       'User interfaces are the most important part of any website. We can create a website that is easy to use',
     image: <MdCode size={size} />,
@@ -17,9 +18,9 @@ export const servicesData = [
     features: ['Modern and responsive', 'Great user experience', 'Very easy to use'],
   },
   {
-    title: 'SEO',
-    description: 'Increase your score in search engines, to reach more visitors who can be converted into customers.',
-    image: <MdAddShoppingCart size={size} />,
-    features: ['Use best keywords', 'Add the perfect metadata', 'Use the best practices in demand'],
+    title: 'Mentorship',
+    description: 'The best way to grow is to help and teach other passionate people to grow.',
+    image: <FaChalkboardTeacher size={size} />,
+    features: ['Teach logical thinking', 'Use a workflow similar to reality', 'Use the best practices in demand'],
   },
 ];

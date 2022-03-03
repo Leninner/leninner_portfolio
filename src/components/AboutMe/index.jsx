@@ -16,13 +16,17 @@ export const AboutMe = () => {
         <h1>
           <span>About</span> Me
         </h1>
-        <p>I am Lenin, Frontend Developer based in Ecuador. I enjoy creating beautiful websites for the internet.</p>
-        <p>My goal is to always build scalable products and performant code.</p>
+        <p>
+          I am Lenin, passionate Frontend Developer based in Ecuador. I enjoy creating beautiful and powerful websites
+          for the internet.
+        </p>
+        <p>My goal is to always write and build scalable products and performant code.</p>
+        <p>I always Like to learn new things and I am always looking for new challenges.</p>
         <MeInfo>
           <section>
             <div>
-              <span>Name:</span>
-              <p>Lenin Mazabanda</p>
+              <span>Prefered name:</span>
+              <p>Lenin</p>
             </div>
             <div>
               <span>Email:</span>
