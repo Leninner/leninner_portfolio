@@ -1,5 +1,5 @@
 import { Title, ServicesBoxContainer } from './styles';
-import { ServiceBox } from '../ServiceBox';
+import { ServiceBox } from '../../components/ServiceBox';
 import { servicesData } from '../../assets/data/servicesData';
 
 export const Services = () => {

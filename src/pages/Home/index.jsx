@@ -1,12 +1,12 @@
 import { Header } from '../../components/Header';
 import { MainView } from '../../components/MainView';
-import { Achievements } from '../../components/Achievements';
-import { Services } from '../../components/Services';
+import { Achievements } from '../../containers/Achievements';
+import { Services } from '../../containers/Services';
 import { SectionContainer } from '../../containers/SectionContainer';
-import { AboutMe } from '../../components/AboutMe';
-import { Skills } from '../../components/Skills';
-import { Projects } from '../../components/Projects';
-import { SendFeedback } from '../../components/SendFeedback';
+import { AboutMe } from '../../containers/AboutMe';
+import { Skills } from '../../containers/Skills';
+
+import { ProjectsContainer } from '../../containers/ProjectsContainer';
 
 export const Home = () => {
   return (
@@ -24,9 +24,8 @@ export const Home = () => {
         <Skills />
       </SectionContainer>
       <SectionContainer id='projects' bgColor='#212428'>
-        <Projects />
+        <ProjectsContainer />
       </SectionContainer>
-      <SendFeedback />
     </>
   );
 };
