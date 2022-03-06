@@ -7,6 +7,6 @@ export const StyledProjectInfo = styled.div`
   backdrop-filter: blur(12px) saturate(180%);
   border: 1px solid #cccd;
   display: flex;
-  height: 512px;
+  height: 546px;
   padding: 2vh;
 `;

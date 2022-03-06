@@ -5,7 +5,6 @@ import { Services } from '../../containers/Services';
 import { SectionContainer } from '../../containers/SectionContainer';
 import { AboutMe } from '../../containers/AboutMe';
 import { Skills } from '../../containers/Skills';
-
 import { ProjectsContainer } from '../../containers/ProjectsContainer';
 
 export const Home = () => {

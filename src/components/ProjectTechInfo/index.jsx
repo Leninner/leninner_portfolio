@@ -1,35 +1,26 @@
-import { TechInfoContainer } from './styles';
+import { TechInfoContainer, Description, TechItem, Title } from './styles';
+import { DiGithubBadge } from 'react-icons/di';
+import { SiRedux, SiStyledcomponents, SiReact } from 'react-icons/si';
+import { TechItemComponent } from '../TechItemComponent';
 
 export const ProjectTechInfo = () => {
   return (
     <TechInfoContainer>
-      <h2>Tech Info</h2>
+      <Title>Tech Info</Title>
       {/* Este div debe tener scroll */}
-      <div>
-        <div>
-          <img src='' alt='' />
-          <div>
-            <h2>React</h2>
-            <p>React is the most popular UI library that allows dev. Build great UI and fast app…</p>
-          </div>
-        </div>
+      <Description>
+        <TechItemComponent TechItem={TechItem} Icon={SiReact} />
+        <TechItemComponent TechItem={TechItem} Icon={SiRedux} />
+        <TechItemComponent TechItem={TechItem} Icon={SiStyledcomponents} />
 
-        <div>
-          <img src='' alt='' />
+        <TechItem>
+          <DiGithubBadge size='90' />
           <div>
-            <h2>Redux</h2>
+            <h2>GitHub</h2>
             <p>React is the most popular UI library that allows dev. Build great UI and fast app…</p>
           </div>
-        </div>
-
-        <div>
-          <img src='' alt='' />
-          <div>
-            <h2>Styled Components</h2>
-            <p>React is the most popular UI library that allows dev. Build great UI and fast app…</p>
-          </div>
-        </div>
-      </div>
+        </TechItem>
+      </Description>
     </TechInfoContainer>
   );
 };

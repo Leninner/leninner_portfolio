@@ -5,8 +5,9 @@ export const MainInfoContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
   border-radius: 18px;
+  max-width: 317px;
+  cursor: default;
 `;
 
 export const InfoContainer = styled.div`
@@ -37,6 +38,11 @@ export const InfoContainer = styled.div`
     font-size: 16px;
     width: 121.42px;
     height: 40px;
+    cursor: pointer;
+
+    &:hover {
+      background: #03bd9a;
+    }
   }
 `;
 

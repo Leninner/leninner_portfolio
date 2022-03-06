@@ -1,4 +1,4 @@
-import { StyledProjectsContainer, Title } from './styles';
+import { StyledProjectsContainer, Title, Container, Description } from './styles';
 import { ProjectInfo } from '../../components/ProjectInfo';
 
 export const ProjectsContainer = () => {
@@ -7,8 +7,14 @@ export const ProjectsContainer = () => {
       <Title>
         <span>Featured</span> Projects
       </Title>
-
-      <ProjectInfo />
+      <Description>
+        Each project was built with specific tools, technology, and design patterns based on the client's needs and the
+        type of project
+      </Description>
+      <Container>
+        <ProjectInfo />
+        <ProjectInfo />
+      </Container>
     </StyledProjectsContainer>
   );
 };

@@ -14,11 +14,26 @@ export const StyledProjectsContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  margin-bottom: 2rem;
+  margin-top: -90px;
+  margin-bottom: 25px;
   font-size: 2.5rem;
   color: white;
 
   span {
     color: #03bd9a;
   }
+`;
+
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+`;
+
+export const Description = styled.p`
+  font-size: 1.2rem;
+  color: #ccc;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 5rem;
 `;
