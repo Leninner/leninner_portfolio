@@ -11,10 +11,6 @@ export const MainInfoContainer = styled.div`
   height: 100%;
   cursor: default;
   margin: 0 1rem 0 0.5rem;
-
-  @media (max-width: 768px) {
-    margin: 0 0.5rem 0 1rem;
-  }
 `;
 
 export const InfoContainer = styled.div`

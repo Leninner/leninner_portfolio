@@ -13,7 +13,6 @@ export const StyledProjectInfo = styled.div`
   @media (max-width: 768px) {
     width: 95%;
     overflow: auto;
-    flex-direction: row-reverse;
   }
 `;
 export const Container = styled.div`
@@ -23,13 +22,8 @@ export const Container = styled.div`
   padding: 1rem 0;
 
   @media (max-width: 768px) {
-    width: 0 auto;
     overflow: auto;
-    flex-direction: row-reverse;
 
-    &::-webkit-scrollbar-thumb {
-      background-color: transparent;
-    }
     &::-webkit-scrollbar:horizontal {
       height: 0px;
     }
