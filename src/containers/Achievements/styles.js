@@ -22,8 +22,8 @@ export const AchievementsData = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    overflow: auto;
     padding: 2vh 0 0 0;
+    margin: 0 auto;
 
     &::-webkit-scrollbar:horizontal {
       height: 0px;
