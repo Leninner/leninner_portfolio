@@ -5,12 +5,6 @@ export const StyledProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media (max-width: 768px) {
-    h1 {
-      text-align: center;
-    }
-  }
 `;
 
 export const Title = styled.h2`
@@ -21,6 +15,10 @@ export const Title = styled.h2`
 
   span {
     color: #03bd9a;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
   }
 `;
 

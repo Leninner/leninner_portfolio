@@ -7,6 +7,8 @@ export const MainInfoContainer = styled.div`
   flex-direction: column;
   border-radius: 18px;
   max-width: 317px;
+  min-width: 317px;
+  height: 100%;
   cursor: default;
 `;
 
@@ -19,15 +21,15 @@ export const InfoContainer = styled.div`
   justify-content: space-between;
   flex-wrap: nowrap;
 
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
   p {
     margin: 1rem 0;
     font-size: 16px;
     overflow: auto;
-  }
-
-  div {
-    display: flex;
-    justify-content: space-between;
   }
 `;
 

@@ -9,9 +9,15 @@ export const StyledProjectInfo = styled.div`
   display: flex;
   height: 546px;
   padding: 2vh;
+  justify-content: space-between;
 
   @media (max-width: 768px) {
     width: 95%;
     overflow: auto;
+    flex-direction: row-reverse;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
   }
 `;
