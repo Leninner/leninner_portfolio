@@ -11,7 +11,7 @@ export const StyledProjectInfo = styled.div`
   padding: 2vh;
 
   @media (max-width: 768px) {
-    width: 100vw;
+    width: 95%;
     overflow: auto;
   }
 `;
