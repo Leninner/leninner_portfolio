@@ -1,6 +1,6 @@
 import { ProjectMainInfo } from '../ProjectMainInfo';
 import { ProjectTechInfo } from '../ProjectTechInfo';
-import { StyledProjectInfo } from './styles';
+import { StyledProjectInfo, Container } from './styles';
 
 export const ProjectInfo = () => {
   const posiblesColors = ['#00b4d8', '#0091ad', '#ff7d00', '#ff0054'];
@@ -9,8 +9,10 @@ export const ProjectInfo = () => {
 
   return (
     <StyledProjectInfo>
-      <ProjectTechInfo colorToUse={colorToUse} />
-      <ProjectMainInfo colorToUse={colorToUse} />
+      <Container>
+        <ProjectTechInfo colorToUse={colorToUse} />
+        <ProjectMainInfo colorToUse={colorToUse} />
+      </Container>
     </StyledProjectInfo>
   );
 };

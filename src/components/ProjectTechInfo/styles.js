@@ -6,16 +6,13 @@ export const TechInfoContainer = styled.div`
   flex-direction: column;
   color: white;
   align-items: center;
+  margin: 0 0.5rem 0 1rem;
 
   svg {
     color: white;
     margin: 0 10px;
     position: relative;
     filter: drop-shadow(0 0 0.4rem #03bd9a);
-  }
-
-  @media (max-width: 768px) {
-    min-width: 70%;
   }
 `;
 

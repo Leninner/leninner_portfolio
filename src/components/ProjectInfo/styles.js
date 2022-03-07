@@ -6,18 +6,27 @@ export const StyledProjectInfo = styled.div`
   border-radius: 24px;
   backdrop-filter: blur(12px) saturate(180%);
   border: 1px solid #cccd;
-  display: flex;
-  height: 546px;
-  padding: 2vh;
-  justify-content: space-between;
 
   @media (max-width: 768px) {
     width: 95%;
     overflow: auto;
     flex-direction: row-reverse;
 
-    &::-webkit-scrollbar-thumb {
-      background-color: transparent;
+    &::-webkit-scrollbar:horizontal {
+      height: 0px;
     }
+  }
+`;
+
+export const Container = styled.div`
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  @media (max-width: 768px) {
+    width: 0 auto;
+    overflow: auto;
+    flex-direction: row-reverse;
   }
 `;
