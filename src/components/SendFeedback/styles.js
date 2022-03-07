@@ -15,7 +15,7 @@ export const BoxFeedback = styled.div`
   padding: 10px 25px;
   height: 40px;
   border-radius: 5px 5px 0 0;
-  top: calc(100vh - 6vh);
+  bottom: 0;
   z-index: 9999;
   transition: 200ms ease-out;
   display: flex;
