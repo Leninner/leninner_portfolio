@@ -86,10 +86,10 @@ export const NavigationMobile = styled.nav`
     justify-content: space-between;
     position: absolute;
     top: 100%;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: #212428;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
     ${SideInAnimation()};
   }
 `;
