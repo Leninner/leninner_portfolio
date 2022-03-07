@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainInfoContainer = styled.div`
-  background: #03bd9a;
+  background: ${(props) => props.colorToUse};
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -21,28 +21,13 @@ export const InfoContainer = styled.div`
 
   p {
     margin: 1rem 0;
-    font-size: 18px;
+    font-size: 16px;
     overflow: auto;
   }
 
   div {
     display: flex;
     justify-content: space-between;
-  }
-
-  button {
-    transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
-    padding: 0.5rem 1rem;
-    border: 0;
-    border-radius: 8px;
-    font-size: 16px;
-    width: 121.42px;
-    height: 40px;
-    cursor: pointer;
-
-    &:hover {
-      background: #03bd9a;
-    }
   }
 `;
 
@@ -52,4 +37,21 @@ export const Img = styled.img`
   border-top-right-radius: 18px;
   min-height: 184px;
   object-fit: cover;
+`;
+
+export const Button = styled.button`
+  transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 121.42px;
+  height: 40px;
+  cursor: pointer;
+  background-color: ${({ details }) => (details ? 'rgba(255, 255, 255, 0.3);' : 'rgba(0, 0, 0, 0.3)')};
+  color: rgba(255, 255, 255, 1);
+
+  &:hover {
+    background: ${({ details }) => (details ? 'rgba(255, 255, 255, 0.3);' : 'rgba(0, 0, 0, 0.3)')};
+  }
 `;

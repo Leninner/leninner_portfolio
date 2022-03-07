@@ -9,4 +9,9 @@ export const StyledProjectInfo = styled.div`
   display: flex;
   height: 546px;
   padding: 2vh;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    overflow: auto;
+  }
 `;

@@ -13,6 +13,10 @@ export const TechInfoContainer = styled.div`
     position: relative;
     filter: drop-shadow(0 0 0.4rem #03bd9a);
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Description = styled.div`
