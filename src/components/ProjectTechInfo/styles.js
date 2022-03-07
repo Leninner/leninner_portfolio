@@ -15,6 +15,10 @@ export const TechInfoContainer = styled.div`
     position: relative;
     filter: drop-shadow(0 0 0.4rem #03bd9a);
   }
+
+  @media (max-width: 768px) {
+    min-width: 50%;
+  }
 `;
 
 export const Description = styled.div`
@@ -31,7 +35,7 @@ export const Description = styled.div`
 export const TechItem = styled.div`
   display: flex;
   align-items: flex-start;
-  padding: 0 15px 15px 0;
+  padding: 0 0 15px 0;
   margin: 10px 0;
   position: relative;
 
