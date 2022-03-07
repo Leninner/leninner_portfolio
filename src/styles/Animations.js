@@ -21,7 +21,7 @@ const sideIn = keyframes`
   }
 
   to {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 `;
 

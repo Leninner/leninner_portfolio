@@ -23,6 +23,10 @@ export const AchievementsData = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     overflow: auto;
+
+    &::-webkit-scrollbar:horizontal {
+      height: 0px;
+    }
   }
 `;
 

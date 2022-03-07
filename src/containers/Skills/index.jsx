@@ -11,6 +11,7 @@ export const Skills = () => {
       <h1>
         I use Techs <span>in Demand</span>
       </h1>
+
       <SkillsItems>
         <div>
           <DiJavascript1 size={SIZE} color={COLOR} />

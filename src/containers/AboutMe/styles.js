@@ -22,7 +22,7 @@ export const StyledAboutMe = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 80%;
+    width: 85%;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -110,6 +110,10 @@ export const MeInfo = styled.div`
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 2vh;
   }
 `;
 

@@ -9,6 +9,7 @@ export const Achievements = () => {
           Great Achievements <span>in My Career</span>
         </h3>
       </AchievementTitle>
+
       <AchievementsData>
         <AchievementItem>
           <MdAddTask size='50' color='#069c83' />
@@ -17,6 +18,7 @@ export const Achievements = () => {
             <p>Projects complete</p>
           </div>
         </AchievementItem>
+
         <AchievementItem middle>
           <MdSupervisedUserCircle size='50' color='#069c83' />
           <div>
@@ -24,6 +26,7 @@ export const Achievements = () => {
             <p>Satisfied Clients</p>
           </div>
         </AchievementItem>
+
         <AchievementItem>
           <MdVerified size='50' color='#069c83' />
           <div>

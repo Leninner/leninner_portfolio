@@ -40,4 +40,8 @@ export const Description = styled.p`
   width: 60%;
   text-align: center;
   margin-bottom: 5rem;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
