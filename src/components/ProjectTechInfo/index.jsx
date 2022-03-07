@@ -11,6 +11,7 @@ export const ProjectTechInfo = ({ colorToUse }) => {
         <TechItemComponent TechItem={TechItem} Icon={SiReact} />
         <TechItemComponent TechItem={TechItem} Icon={SiRedux} />
         <TechItemComponent TechItem={TechItem} Icon={SiStyledcomponents} />
+        <TechItemComponent TechItem={TechItem} Icon={SiStyledcomponents} />
       </Description>
     </TechInfoContainer>
   );

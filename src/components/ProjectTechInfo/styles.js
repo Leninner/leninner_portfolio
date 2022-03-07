@@ -7,6 +7,7 @@ export const TechInfoContainer = styled.div`
   color: white;
   align-items: center;
   margin: 0 0.5rem 0 1rem;
+  height: 100%;
 
   svg {
     color: white;
@@ -17,7 +18,7 @@ export const TechInfoContainer = styled.div`
 `;
 
 export const Description = styled.div`
-  overflow: auto;
+  overflow-y: auto;
   width: 100%;
   height: 100%;
   font-size: 14px;

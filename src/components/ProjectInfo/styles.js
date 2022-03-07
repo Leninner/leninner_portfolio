@@ -6,6 +6,7 @@ export const StyledProjectInfo = styled.div`
   border-radius: 24px;
   backdrop-filter: blur(12px) saturate(180%);
   border: 1px solid #cccd;
+  height: 546px;
 
   @media (max-width: 768px) {
     width: 95%;
@@ -19,10 +20,10 @@ export const StyledProjectInfo = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 40rem;
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
+  height: 100%;
 
   @media (max-width: 768px) {
     width: 0 auto;

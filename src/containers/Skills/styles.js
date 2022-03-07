@@ -38,7 +38,7 @@ export const SkillsItems = styled.div`
   }
 
   &::-webkit-scrollbar:horizontal {
-    height: 8px;
+    height: 5px;
   }
 
   div {
