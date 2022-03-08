@@ -20,7 +20,7 @@ export const Box = styled(Link)`
 
   @media (max-width: 768px) {
     width: 95%;
-    height: 400px;
+    height: auto;
   }
 `;
 
