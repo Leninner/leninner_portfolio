@@ -2,10 +2,11 @@ import { ProjectDetailTechs } from '../ProjectDetailTechs';
 import { ProjectDetailsContainer } from './styles';
 import { ProjectDetailOverview } from '../ProjectDetailOverview';
 
-export const ProjectDetails = ({ techInfo }) => {
+export const ProjectDetails = (props) => {
+  const { techInfo } = props;
   return (
     <ProjectDetailsContainer>
-      <ProjectDetailOverview />
+      <ProjectDetailOverview {...props} />
       <ProjectDetailTechs techInfo={techInfo} />
     </ProjectDetailsContainer>
   );

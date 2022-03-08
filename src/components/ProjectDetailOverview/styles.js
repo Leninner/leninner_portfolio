@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ProjectDetailOverviewContainer = styled.div`
@@ -54,7 +53,7 @@ export const ButtonContainer = styled.div`
   display: flex;
 `;
 
-export const Button = styled(Link)`
+export const Button = styled.a`
   text-decoration: none;
   color: #fff;
   padding: 0.8rem 1.2rem;

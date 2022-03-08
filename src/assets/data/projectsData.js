@@ -37,7 +37,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: 'Mini Big Challenges',
+    title: 'Mini|Big Challenges',
     description: 'The best way to grow is to help and teach other passionate people to grow.',
     image: '',
     features: ['Teach logical thinking', 'Use a workflow similar to reality', 'Use the best practices in demand'],
