@@ -1,7 +1,10 @@
 import { StyledProjectsContainer, Title, Container, Description } from './styles';
 import { ProjectInfo } from '../../components/ProjectInfo';
+import { projectsData } from '../../assets/data/projectsData';
 
 export const ProjectsContainer = () => {
+  const projectsToDisplay = projectsData.splice(0, 2);
+
   return (
     <StyledProjectsContainer>
       <Title>
@@ -12,8 +15,9 @@ export const ProjectsContainer = () => {
         type of project
       </Description>
       <Container>
-        <ProjectInfo />
-        <ProjectInfo />
+        {projectsToDisplay.map((project) => (
+          <ProjectInfo {...project} key={project.id} />
+        ))}
       </Container>
     </StyledProjectsContainer>
   );

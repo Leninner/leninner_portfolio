@@ -11,7 +11,7 @@ export const TechInfoContainer = styled.div`
 
   svg {
     color: white;
-    margin: 0 10px;
+    margin: 0 15px 0 10px;
     position: relative;
     filter: drop-shadow(0 0 0.4rem #03bd9a);
   }
@@ -36,11 +36,13 @@ export const TechItem = styled.div`
   display: flex;
   align-items: flex-start;
   padding: 0 0 15px 0;
+  justify-content: space-between;
   margin: 10px 0;
   position: relative;
 
   div {
     color: white;
+    width: 100%;
 
     h2 {
       width: 100%;

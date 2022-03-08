@@ -1,10 +1,7 @@
 import { Img, MainInfoContainer, InfoContainer, Button } from './styles';
 
-export const ProjectMainInfo = ({ colorToUse }) => {
+export const ProjectMainInfo = ({ colorToUse, title, description, preview }) => {
   const validLetters = 200;
-
-  const string =
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, saepe sapiente blanditiis harum hic dolorem porro similique, mollitia ipsum sequi dignissimos velit perferendis provident, perspiciatis iusto animi atque. Facere, cupiditate?';
 
   return (
     <MainInfoContainer colorToUse={colorToUse}>
@@ -13,11 +10,15 @@ export const ProjectMainInfo = ({ colorToUse }) => {
         alt=''
       />
       <InfoContainer>
-        <h1>Shoppingify List</h1>
-        <p>{string.slice(0, validLetters)}...</p>
+        <h1>{title}</h1>
+        <p>{description.slice(0, validLetters)}...</p>
         <div>
           <Button details>Details</Button>
-          <Button>Visit</Button>
+          <Button>
+            <a href={preview} target='_blank' rel='noreferrer'>
+              Visit
+            </a>
+          </Button>
         </div>
       </InfoContainer>
     </MainInfoContainer>

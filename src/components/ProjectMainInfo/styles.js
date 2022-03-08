@@ -52,7 +52,11 @@ export const Button = styled.button`
   height: 40px;
   cursor: pointer;
   background-color: ${({ details }) => (details ? 'rgba(255, 255, 255, 0.3);' : 'rgba(0, 0, 0, 0.3)')};
-  color: rgba(255, 255, 255, 1);
+
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+  }
 
   &:hover {
     background: ${({ details }) => (details ? 'rgba(255, 255, 255, 0.4);' : 'rgba(0, 0, 0, 0.4)')};

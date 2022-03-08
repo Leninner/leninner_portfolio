@@ -1,14 +1,14 @@
-export const TechItemComponent = ({ TechItem, Icon }) => {
+export const TechItemComponent = ({ TechItem, Icon, name, link, description }) => {
   return (
     <TechItem>
-      <Icon size='90' />
+      {Icon}
       <div>
         <h2>
-          <a href='https://es.reactjs.org/' target='_blank' rel='noreferrer'>
-            React
+          <a href={link} target='_blank' rel='noreferrer'>
+            {name}
           </a>
         </h2>
-        <p>React is the most popular UI library that allows dev. Build great UI and fast app…</p>
+        <p>{description}</p>
       </div>
     </TechItem>
   );

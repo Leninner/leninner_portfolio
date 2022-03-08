@@ -27,19 +27,19 @@ export const Header = () => {
         <StyledNavLink to='/home' onClick={handleScroll}>
           HOME
         </StyledNavLink>
-        <StyledLink to='services' spy={true} smooth={true} offset={-70} duration={500}>
+        <StyledLink to='services' spy='true' smooth='true' offset={-70} duration={500}>
           SERVICES
         </StyledLink>
-        <StyledLink to='about' spy={true} smooth={true} offset={-70} duration={500}>
+        <StyledLink to='about' spy='true' smooth='true' offset={-70} duration={500}>
           ABOUT ME
         </StyledLink>
-        <StyledLink to='skills' spy={true} smooth={true} offset={-70} duration={500}>
+        <StyledLink to='skills' spy='true' smooth='true' offset={-70} duration={500}>
           SKILLS
         </StyledLink>
-        <StyledLink to='projects' spy={true} smooth={true} offset={-70} duration={500}>
+        <StyledLink to='projects' spy='true' smooth='true' offset={-70} duration={500}>
           PROJECTS
         </StyledLink>
-        <StyledLink to='contact' spy={true} smooth={true} offset={-70} duration={500}>
+        <StyledLink to='contact' spy='true' smooth='true' offset={-70} duration={500}>
           CONTACT
         </StyledLink>
       </NavigationDesktop>
@@ -50,19 +50,19 @@ export const Header = () => {
         <StyledNavLink to='/home' onClick={handleScroll}>
           HOME
         </StyledNavLink>
-        <StyledLink to='services' spy={true} smooth={true} offset={-70} duration={500} onClick={handleClick}>
+        <StyledLink to='services' spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
           SERVICES
         </StyledLink>
-        <StyledLink to='about' spy={true} smooth={true} offset={-70} duration={500} onClick={handleClick}>
+        <StyledLink to='about' spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
           ABOUT ME
         </StyledLink>
-        <StyledLink to='skills' spy={true} smooth={true} offset={-70} duration={500} onClick={handleClick}>
+        <StyledLink to='skills' spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
           SKILLS
         </StyledLink>
-        <StyledLink to='projects' spy={true} smooth={true} offset={-70} duration={500} onClick={handleClick}>
+        <StyledLink to='projects' spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
           PROJECTS
         </StyledLink>
-        <StyledNavLink to='contact' spy={true} smooth={true} offset={-70} duration={500} onClick={handleClick}>
+        <StyledNavLink to='contact' spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
           CONTACT
         </StyledNavLink>
       </NavigationMobile>

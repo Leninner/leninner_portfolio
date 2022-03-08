@@ -1,17 +1,16 @@
 import { TechInfoContainer, Description, TechItem, Title } from './styles';
-import { SiRedux, SiStyledcomponents, SiReact } from 'react-icons/si';
 import { TechItemComponent } from '../TechItemComponent';
 
-export const ProjectTechInfo = ({ colorToUse }) => {
+export const ProjectTechInfo = ({ techInfo }) => {
+  console.log(techInfo);
   return (
     <TechInfoContainer>
       <Title>Tech Info</Title>
       {/* Este div debe tener scroll */}
       <Description>
-        <TechItemComponent TechItem={TechItem} Icon={SiReact} />
-        <TechItemComponent TechItem={TechItem} Icon={SiRedux} />
-        <TechItemComponent TechItem={TechItem} Icon={SiStyledcomponents} />
-        <TechItemComponent TechItem={TechItem} Icon={SiStyledcomponents} />
+        {techInfo.map((tech, index) => (
+          <TechItemComponent TechItem={TechItem} {...tech} key={index} />
+        ))}
       </Description>
     </TechInfoContainer>
   );
