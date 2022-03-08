@@ -29,7 +29,7 @@ export const InfoContainer = styled.div`
 
   p {
     margin: 1rem 0;
-    font-size: 16px;
+    font-size: 18px;
     overflow: auto;
   }
 `;

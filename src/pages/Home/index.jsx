@@ -14,21 +14,26 @@ export const Home = () => {
       <Header />
       <MainView />
       <Achievements />
-      <SectionContainer id='services' bgColor='#212428'>
-        <Services />
-      </SectionContainer>
       <SectionContainer id='about' bgColor='#1c1e20'>
         <AboutMe />
       </SectionContainer>
+
+      <SectionContainer id='services' bgColor='#212428'>
+        <Services />
+      </SectionContainer>
+
       <SectionContainer id='skills' bgColor='#212428'>
         <Skills />
       </SectionContainer>
+
       <SectionContainer id='projects' bgColor='#212428'>
         <ProjectsContainer />
       </SectionContainer>
+
       <SectionContainer id='blog' bgColor='#212428'>
         <Blog />
       </SectionContainer>
+
       <SectionContainer id='contact' bgColor='#212428'>
         <div className='container'>
           <div className='row'>

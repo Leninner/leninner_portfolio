@@ -15,7 +15,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   &::selection {
-    background: transparent;
+    background: yellow;
+    color: black;
   }
 
 

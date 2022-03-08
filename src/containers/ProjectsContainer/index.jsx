@@ -3,7 +3,8 @@ import { ProjectInfo } from '../../components/ProjectInfo';
 import { projectsData } from '../../assets/data/projectsData';
 
 export const ProjectsContainer = () => {
-  const projectsToDisplay = projectsData.splice(0, 2);
+  const projects = [...projectsData];
+  const projectsToDisplay = projects.splice(0, 2);
 
   return (
     <StyledProjectsContainer>
@@ -12,8 +13,8 @@ export const ProjectsContainer = () => {
       </Title>
 
       <Description>
-        Each project was built with specific tools, technology, and design patterns based on the client's needs and the
-        type of project
+        Each project was built with <strong>high value tools</strong> like React, Redux and always looking to write a
+        <strong>scalable and performant code.</strong>
       </Description>
 
       <Container>

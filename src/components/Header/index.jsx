@@ -20,6 +20,29 @@ export const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const navItems = [
+    {
+      name: 'About Me',
+      link: 'about',
+    },
+    {
+      name: 'Services',
+      link: 'services',
+    },
+    {
+      name: 'Projects',
+      link: 'projects',
+    },
+    {
+      name: 'Blog',
+      link: 'blog',
+    },
+    {
+      name: 'Contact',
+      link: 'contact',
+    },
+  ];
+
   return (
     <StyledHeader>
       <ImgLogo src={Logo} alt='LE' />
@@ -27,21 +50,11 @@ export const Header = () => {
         <StyledNavLink to='/home' onClick={handleScroll}>
           HOME
         </StyledNavLink>
-        <StyledLink to='services' spy='true' smooth='true' offset={-70} duration={500}>
-          SERVICES
-        </StyledLink>
-        <StyledLink to='about' spy='true' smooth='true' offset={-70} duration={500}>
-          ABOUT ME
-        </StyledLink>
-        <StyledLink to='skills' spy='true' smooth='true' offset={-70} duration={500}>
-          SKILLS
-        </StyledLink>
-        <StyledLink to='projects' spy='true' smooth='true' offset={-70} duration={500}>
-          PROJECTS
-        </StyledLink>
-        <StyledLink to='contact' spy='true' smooth='true' offset={-70} duration={500}>
-          CONTACT
-        </StyledLink>
+        {navItems.map(({ name, link }, index) => (
+          <StyledLink to={link} spy='true' smooth='true' offset={-70} duration={500}>
+            {name.toUpperCase()}
+          </StyledLink>
+        ))}
       </NavigationDesktop>
 
       {isOpen ? <AiOutlineClose size='25' onClick={handleClick} /> : <AiOutlineMenu size='25' onClick={handleClick} />}
@@ -50,21 +63,11 @@ export const Header = () => {
         <StyledNavLink to='/home' onClick={handleScroll}>
           HOME
         </StyledNavLink>
-        <StyledLink to='services' spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
-          SERVICES
-        </StyledLink>
-        <StyledLink to='about' spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
-          ABOUT ME
-        </StyledLink>
-        <StyledLink to='skills' spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
-          SKILLS
-        </StyledLink>
-        <StyledLink to='projects' spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
-          PROJECTS
-        </StyledLink>
-        <StyledNavLink to='contact' spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
-          CONTACT
-        </StyledNavLink>
+        {navItems.map(({ name, link }, index) => (
+          <StyledLink to={link} spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
+            {name.toUpperCase()}
+          </StyledLink>
+        ))}
       </NavigationMobile>
     </StyledHeader>
   );
