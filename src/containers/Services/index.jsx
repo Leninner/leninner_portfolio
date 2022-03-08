@@ -6,7 +6,7 @@ export const Services = () => {
   return (
     <>
       <Title>
-        <span>Ser</span>vices
+        <span>What I </span>am do
       </Title>
       <ServicesBoxContainer>
         {servicesData.map((value, index) => (
