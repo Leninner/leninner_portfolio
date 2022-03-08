@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 export const StyledMainView = styled.section`
   width: 100%;
@@ -92,9 +93,10 @@ export const ButtonsContainer = styled.div`
   }
 `;
 
-export const SeeProjects = styled.button`
+export const SeeProjects = styled(Link)`
   background: none;
   outline: none;
+  text-decoration: none;
   color: white;
   border: 1px solid #117464;
   border-radius: 30px;

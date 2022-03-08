@@ -21,14 +21,16 @@ export const MainView = () => {
         <h4>Front-end Developer</h4>
 
         <ButtonsContainer>
-          <SeeProjects>
+          <SeeProjects to='projects' spy='true' smooth='true' offset={-70} duration={500}>
             <span>
               See Projects <MdArrowRightAlt size='32' />
             </span>
           </SeeProjects>
+
           <a href='https://www.linkedin.com/in/leninner/' target='_blank' rel='noreferrer'>
             <ButtonLinkedIn>LinkedIn</ButtonLinkedIn>
           </a>
+
           <a href='https://github.com/leninner' target='_blank' rel='noreferrer'>
             <ButtonIcons>
               <AiFillGithub />

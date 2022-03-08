@@ -51,7 +51,7 @@ export const Header = () => {
           HOME
         </StyledNavLink>
         {navItems.map(({ name, link }, index) => (
-          <StyledLink to={link} spy='true' smooth='true' offset={-70} duration={500}>
+          <StyledLink to={link} spy='true' smooth='true' offset={-70} duration={500} key={index}>
             {name.toUpperCase()}
           </StyledLink>
         ))}
