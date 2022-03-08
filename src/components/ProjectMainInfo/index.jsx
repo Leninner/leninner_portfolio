@@ -1,6 +1,7 @@
 import { Img, MainInfoContainer, InfoContainer, Button } from './styles';
+import { Link } from 'react-router-dom';
 
-export const ProjectMainInfo = ({ colorToUse, title, description, preview, image }) => {
+export const ProjectMainInfo = ({ colorToUse, title, description, preview, image, id }) => {
   const validLetters = 200;
 
   return (
@@ -10,7 +11,10 @@ export const ProjectMainInfo = ({ colorToUse, title, description, preview, image
         <h1>{title}</h1>
         <p>{description.slice(0, validLetters)}...</p>
         <div>
-          <Button details>Details</Button>
+          <Link to={`/projects/${id}`}>
+            <Button details>Details</Button>
+          </Link>
+
           <a href={preview} target='_blank' rel='noreferrer'>
             <Button>Visit</Button>
           </a>
