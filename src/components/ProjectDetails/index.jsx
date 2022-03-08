@@ -27,10 +27,10 @@ export const ProjectDetails = (props) => {
           </ProjectDetailsContainer>
         </>
       ) : (
-        <>
+        <ProjectDetailsContainer>
           <ProjectDetailOverview {...props} />
           <ProjectDetailTechs techInfo={techInfo} />
-        </>
+        </ProjectDetailsContainer>
       )}
     </>
   );
