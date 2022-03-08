@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const StyledProjectsContainer = styled.div`
   width: 100%;
@@ -46,7 +47,7 @@ export const Description = styled.p`
   }
 `;
 
-export const ShowAllButton = styled.button`
+export const ShowAllButton = styled(Link)`
   font-size: 1.2rem;
   color: #fff;
   text-decoration: none;

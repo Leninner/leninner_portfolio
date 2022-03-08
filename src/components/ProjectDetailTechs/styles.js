@@ -10,8 +10,10 @@ export const ProjectDetailTechsContainer = styled.div`
   height: 100%;
   padding: 2rem 1rem;
   filter: drop-shadow(0px 0px 10px 0px rgba(0, 0, 0, 0.75));
-  background: #1a1a1a;
+  background: #1c1e20;
+  height: 100%;
   border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(4, 229, 133, 0.3);
 `;
 
 export const TechItem = styled.div`

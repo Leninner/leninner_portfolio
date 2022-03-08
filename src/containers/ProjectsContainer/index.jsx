@@ -1,17 +1,10 @@
 import { StyledProjectsContainer, Title, Container, Description, ShowAllButton } from './styles';
 import { ProjectInfo } from '../../components/ProjectInfo';
 import { projectsData } from '../../assets/data/projectsData';
-import { ProjectsModal } from '../ProjectsModal';
-import { useState } from 'react';
 
 export const ProjectsContainer = () => {
   const projects = [...projectsData];
   const projectsToDisplay = projects.slice(0, 2);
-  const [projectsPageOpen, setProjectsPageOpen] = useState(false);
-
-  const handleShowAllProjects = () => {
-    setProjectsPageOpen(true);
-  };
 
   return (
     <StyledProjectsContainer>
@@ -30,9 +23,7 @@ export const ProjectsContainer = () => {
         ))}
       </Container>
 
-      {projectsPageOpen && <ProjectsModal />}
-
-      <ShowAllButton onClick={handleShowAllProjects}>Show All</ShowAllButton>
+      <ShowAllButton to='/projects'>Show All</ShowAllButton>
     </StyledProjectsContainer>
   );
 };

@@ -1,4 +1,6 @@
-import { ProjectDetailOverviewContainer, Img, ProjectInfo, ProjectTitle, Button } from './styles';
+import { ProjectDetailOverviewContainer, Img, ProjectInfo, ProjectTitle, Button, ButtonContainer } from './styles';
+import { GoRepo } from 'react-icons/go';
+import { AiOutlineLink } from 'react-icons/ai';
 
 export const ProjectDetailOverview = () => {
   return (
@@ -7,11 +9,17 @@ export const ProjectDetailOverview = () => {
 
       <ProjectInfo>
         <ProjectTitle>
-          <h1>Shoppingify List</h1>
-          <div>
-            <Button repo>Repository</Button>
-            <Button>Visit</Button>
-          </div>
+          <h1>
+            <span>Shoppingify </span>List
+          </h1>
+          <ButtonContainer>
+            <Button repo to='/'>
+              Repository <GoRepo />
+            </Button>
+            <Button to='/'>
+              Visit <AiOutlineLink />
+            </Button>
+          </ButtonContainer>
         </ProjectTitle>
 
         <p>

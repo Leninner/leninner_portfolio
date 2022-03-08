@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const ProjectsContainer = styled.div`
   width: 100%;
@@ -6,19 +7,60 @@ export const ProjectsContainer = styled.div`
   top: 0;
   left: 0;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: #212428;
   z-index: 100;
   overflow: scroll;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #212428;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    box-shadow: 0px 0px 1px 0px rgba(4, 229, 133, 0.6);
+    margin-bottom: 2rem;
+
+    .back {
+      color: white;
+      height: 85px;
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      p {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          color: #03bd9a;
+          text-shadow: 0 0 0.2rem #03bd9a;
+        }
+      }
+    }
+  }
 
   section {
     max-width: 1200px;
     width: 100%;
-    padding-top: 3rem;
-
-    .back {
-      color: white;
-    }
   }
+
+  &::-webkit-scrollbar:vertical {
+    width: 0px;
+  }
+`;
+
+export const Span = styled(Link)`
+  text-decoration: none;
 `;
