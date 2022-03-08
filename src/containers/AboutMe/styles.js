@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledAboutMe = styled.div`
-  width: 70%;
+  width: 80%;
   display: flex;
   color: white;
   cursor: default;
@@ -14,11 +14,6 @@ export const StyledAboutMe = styled.div`
     span {
       color: #03bd9a;
     }
-  }
-
-  p {
-    margin-bottom: 1.5rem;
-    filter: drop-shadow(0 0 0.2rem #03bd9a);
   }
 
   @media (max-width: 768px) {
@@ -46,7 +41,7 @@ export const StyledAboutMe = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  width: 75%;
+  width: 100%;
   padding: 20px 0;
   margin: 0 10vh 0 0;
   object-fit: cover;
@@ -148,5 +143,20 @@ export const GetCv = styled.a`
     width: auto;
     padding: 1vh 3vh;
     font-size: 1rem;
+  }
+`;
+
+export const MySelf = styled.div`
+  width: 100%;
+
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    color: #ccc;
+
+    strong {
+      color: #03bd9a;
+      text-shadow: 0 0 0.1rem #03bd9a;
+    }
   }
 `;

@@ -1,4 +1,4 @@
-import { StyledAboutMe, ImgContainer, MeInfo, GetCv } from './styles';
+import { StyledAboutMe, ImgContainer, MeInfo, GetCv, MySelf } from './styles';
 import { MdArrowRightAlt } from 'react-icons/md';
 import cv from '../../utils/cv.pdf';
 
@@ -14,14 +14,24 @@ export const AboutMe = () => {
 
       <div>
         <h1>
-          <span>About</span> Me
+          <span>Work with a </span>problem solver
         </h1>
-        <p>
-          I am Lenin, passionate Frontend Developer based in Ecuador. I enjoy creating beautiful and powerful websites
-          for the internet.
-        </p>
-        <p>My goal is to always write and build scalable products and performant code.</p>
-        <p>I always Like to learn new things and I am always looking for new challenges.</p>
+
+        <MySelf>
+          <p>
+            <strong>"Never stop learning" -Platzi-</strong> has been the constant that has governed my life in the last
+            year, when I began to put all my effort into <strong>learning high-value skills.</strong>
+          </p>
+          <p>
+            With a programming background, I became fascinated with <strong>Frontend development </strong>which became
+            my passion.
+          </p>
+          <p>
+            My goal is to always write and build scalable products and performant code. I like to learn new things and I
+            am always <strong>looking for new challenges.</strong>
+          </p>
+        </MySelf>
+
         <MeInfo>
           <section>
             <div>
@@ -48,6 +58,7 @@ export const AboutMe = () => {
             </div>
           </section>
         </MeInfo>
+
         <GetCv download='Frontend_Developer_Lenin_Mazabanda.pdf' href={cv} target='_blank'>
           <p>Descargar CV</p>
           <MdArrowRightAlt size='32' />

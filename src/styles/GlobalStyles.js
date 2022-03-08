@@ -14,11 +14,6 @@ export const GlobalStyles = createGlobalStyle`
     background: #212428;
   }
 
-  &::selection {
-    background: transparent;
-  }
-
-
   &::-webkit-scrollbar {
       -webkit-appearance: none;
   }
