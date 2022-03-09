@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const BlogContainer = styled.div`
   width: 100%;
@@ -8,7 +7,7 @@ export const BlogContainer = styled.div`
   flex-wrap: wrap;
 `;
 
-export const ShowAllButton = styled(Link)`
+export const ShowAllButton = styled.a`
   font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
