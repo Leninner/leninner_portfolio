@@ -30,6 +30,10 @@ export const Header = () => {
       link: 'services',
     },
     {
+      name: 'Skills',
+      link: 'skills',
+    },
+    {
       name: 'Projects',
       link: 'projects',
     },
@@ -64,7 +68,7 @@ export const Header = () => {
           HOME
         </StyledNavLink>
         {navItems.map(({ name, link }, index) => (
-          <StyledLink to={link} spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick}>
+          <StyledLink to={link} spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick} key={index}>
             {name.toUpperCase()}
           </StyledLink>
         ))}
