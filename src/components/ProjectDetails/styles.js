@@ -9,6 +9,12 @@ export const ProjectDetailsContainer = styled.div`
   height: 100%;
   max-height: 100vh;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    max-height: none;
+  }
+
   ${({ ids }) =>
     ids &&
     `
@@ -34,10 +40,6 @@ export const Return = styled(Link)`
     max-width: 1200px;
     width: 100%;
     color: white;
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    align-items: center;
 
     &:hover {
       color: #03bd9a;
@@ -53,5 +55,9 @@ export const Return = styled(Link)`
     svg {
       margin-right: 10px;
     }
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 1.5rem;
   }
 `;

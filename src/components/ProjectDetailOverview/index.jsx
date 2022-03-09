@@ -16,10 +16,11 @@ export const ProjectDetailOverview = ({ title, preview, description, image, repo
           </h1>
           <ButtonContainer>
             <Button repo href={repo} target='_blank' rel='noreferrer'>
-              Repository <GoRepo />
+              <span>Repository</span> <GoRepo />
             </Button>
             <Button href={preview} target='_blank' rel='noreferrer'>
-              Visit <AiOutlineLink />
+              <span>Visit </span>
+              <AiOutlineLink />
             </Button>
           </ButtonContainer>
         </ProjectTitle>

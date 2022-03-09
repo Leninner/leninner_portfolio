@@ -49,11 +49,22 @@ export const ProjectsContainer = styled.div`
         }
       }
     }
+
+    @media (max-width: 768px) {
+      padding-left: 1.5rem;
+    }
   }
 
   section {
     max-width: 1200px;
     width: 100%;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &::-webkit-scrollbar:vertical {

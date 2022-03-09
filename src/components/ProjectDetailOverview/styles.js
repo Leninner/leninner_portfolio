@@ -8,6 +8,11 @@ export const ProjectDetailOverviewContainer = styled.div`
   cursor: default;
   box-shadow: 0px 0px 5px 0px rgba(4, 229, 133, 0.3);
   filter: drop-shadow(0px 0px 10px 0px rgba(0, 0, 0, 0.75));
+
+  @media (max-width: 768px) {
+    width: 95%;
+    margin-bottom: 2rem;
+  }
 `;
 
 export const Img = styled.img`
@@ -42,10 +47,10 @@ export const ProjectTitle = styled.div`
     }
   }
 
-  button {
-    background: transparent;
-    border: none;
-    color: #fff;
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 `;
 
@@ -84,5 +89,17 @@ export const Button = styled.a`
 
   &:hover {
     box-shadow: 0 0 0.2rem #03bd9a;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 1rem;
+
+    span {
+      display: none;
+    }
+
+    svg {
+      margin: 0;
+    }
   }
 `;

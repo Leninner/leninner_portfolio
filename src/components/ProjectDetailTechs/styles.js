@@ -14,6 +14,11 @@ export const ProjectDetailTechsContainer = styled.div`
   height: 100%;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px rgba(4, 229, 133, 0.3);
+
+  @media (max-width: 768px) {
+    width: 95%;
+    margin-bottom: 3rem;
+  }
 `;
 
 export const TechItem = styled.div`
