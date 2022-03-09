@@ -47,22 +47,6 @@ export const Home = () => {
       <SectionContainer id='blog' bgColor='#212428'>
         <Blog />
       </SectionContainer>
-
-      <SectionContainer id='contact' bgColor='#212428'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              <h1>Contact</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt
-                consectetur, nisi nunc consequat nunc, eget congue nisl nunc euismod nunc. Vestibulum ante ipsum primis
-                in faucibus orci luctus et ultrices posuere cubilia Curae; Donec euismod, nisi eget congue consectetur,
-                nisi nunc consequat nunc, eget congue nisl nunc euismod nunc.
-              </p>
-            </div>
-          </div>
-        </div>
-      </SectionContainer>
     </>
   );
 };
