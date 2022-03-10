@@ -24,7 +24,7 @@ export const Blog = () => {
   return (
     <>
       <Title>
-        <span>My Blog and</span> Updates (In Spanish)
+        <span>My Blog and</span> Updates (Spanish)
       </Title>
 
       <BlogContainer>
