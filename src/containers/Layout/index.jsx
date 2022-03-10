@@ -5,8 +5,8 @@ export const Layout = ({ children }) => {
   return (
     <>
       {children}
-      <Footer />
       <SendFeedback />
+      <Footer />
     </>
   );
 };

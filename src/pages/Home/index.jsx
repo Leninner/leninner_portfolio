@@ -21,7 +21,6 @@ export const Home = () => {
         '
         />
       </Helmet>
-
       <Header />
 
       <MainView />

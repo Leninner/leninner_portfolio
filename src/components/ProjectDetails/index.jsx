@@ -21,6 +21,7 @@ export const ProjectDetails = (props) => {
               <p>Back</p>
             </span>
           </Return>
+
           <ProjectDetailsContainer ids={id}>
             <ProjectDetailOverview {...project} />
             <ProjectDetailTechs techInfo={project.techInfo} />

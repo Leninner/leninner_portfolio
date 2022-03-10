@@ -4,7 +4,7 @@ export const ProjectDetailOverviewContainer = styled.div`
   width: 766px;
   background: #1c1e20;
   border-radius: 10px;
-  height: 100%;
+
   cursor: default;
   box-shadow: 0px 0px 5px 0px rgba(4, 229, 133, 0.3);
   filter: drop-shadow(0px 0px 10px 0px rgba(0, 0, 0, 0.75));
