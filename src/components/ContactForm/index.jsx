@@ -1,6 +1,6 @@
 import { useFormik } from 'formik';
 import Airtable from 'airtable';
-const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE);
+const base = new Airtable({ apiKey: 'keyn9uOE5rL7BT81q' }).base('app7X4dObbq9Fa7xN');
 
 export const ContactForm = () => {
   const formik = useFormik({
