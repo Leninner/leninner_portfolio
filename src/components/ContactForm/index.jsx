@@ -1,8 +1,19 @@
+import { useState, useEffect } from 'react';
 import { useFormik } from 'formik';
 import Airtable from 'airtable';
-const base = new Airtable({ apiKey: 'keyn9uOE5rL7BT81q' }).base('app7X4dObbq9Fa7xN');
 
 export const ContactForm = () => {
+  const base = new Airtable({ apiKey: 'keyn9uOE5rL7BT81q' }).base('app7X4dObbq9Fa7xN');
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (formSubmitted) {
+      setTimeout(() => {
+        setFormSubmitted(false);
+      }, 3000);
+    }
+  }, [formSubmitted]);
+
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -36,6 +47,8 @@ export const ContactForm = () => {
           });
         }
       );
+
+      setFormSubmitted(true);
     },
     errors: {
       name: '',
@@ -117,7 +130,7 @@ export const ContactForm = () => {
         value={formik.values.message}
         onBlur={formik.handleBlur}
       />
-      <button type='submit'>Send Message</button>
+      <button type='submit'>{formSubmitted ? 'Submitted' : 'Submit'}</button>
     </form>
   );
 };
