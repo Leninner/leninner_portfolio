@@ -90,6 +90,7 @@ export const NavigationMobile = styled.nav`
     width: 100%;
     max-height: 100vh;
     height: 100%;
+    min-height: 100vh;
     overflow: auto;
     background: #212428;
     transition: all 0.3s;
