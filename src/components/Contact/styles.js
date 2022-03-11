@@ -37,6 +37,8 @@ const inputSyles = `
 export const AsideContact = styled.aside`
   width: 50%;
   height: 100%;
+  display: flex;
+  align-items: center;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -101,5 +103,42 @@ export const AsideContact = styled.aside`
         background: #07b382;
       }
     }
+  }
+`;
+
+export const ContactInfo = styled.div`
+  padding: 50px 30px;
+  cursor: default;
+
+  color: white;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    span {
+      color: #0acf97;
+      text-shadow: none;
+    }
+
+    margin-bottom: 1rem;
+  }
+
+  span {
+    color: #0acf97;
+    text-shadow: 0 0 10px #0acf97;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    text-align: center;
   }
 `;
