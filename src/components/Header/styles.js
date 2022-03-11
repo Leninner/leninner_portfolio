@@ -88,8 +88,9 @@ export const NavigationMobile = styled.nav`
     left: 0;
     top: 100%;
     width: 100%;
-    min-height: 100vh;
-    height: auto;
+    max-height: 100vh;
+    height: 100%;
+    overflow: auto;
     background: #212428;
     transition: all 0.3s;
     ${SideInAnimation()};
