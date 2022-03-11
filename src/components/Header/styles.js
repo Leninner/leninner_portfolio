@@ -88,8 +88,7 @@ export const NavigationMobile = styled.nav`
     left: 0;
     top: 100%;
     width: 100%;
-    max-height: 100vh;
-    height: 100vh;
+    height: calc(100vh - 100px);
     overflow: auto;
     background: #212428;
     transition: all 0.3s;
