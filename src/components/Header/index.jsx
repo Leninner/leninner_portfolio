@@ -49,9 +49,9 @@ export const Header = () => {
 
   return (
     <StyledHeader>
-      <ImgLogo src={Logo} alt='LE' />
+      <ImgLogo src={Logo} alt='LE' onClick={handleScroll} />
       <NavigationDesktop>
-        <StyledNavLink to='/home' onClick={handleScroll}>
+        <StyledNavLink to='/' onClick={handleScroll}>
           HOME
         </StyledNavLink>
         {navItems.map(({ name, link }, index) => (
@@ -64,7 +64,7 @@ export const Header = () => {
       {isOpen ? <AiOutlineClose size='25' onClick={handleClick} /> : <AiOutlineMenu size='25' onClick={handleClick} />}
 
       <NavigationMobile isOpen={isOpen}>
-        <StyledNavLink to='/home' onClick={handleScroll}>
+        <StyledNavLink to='/' onClick={handleScroll}>
           HOME
         </StyledNavLink>
         {navItems.map(({ name, link }, index) => (
