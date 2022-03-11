@@ -75,7 +75,7 @@ export const ContactForm = () => {
 
       if (!values.phone) {
         errors.phone = 'Phone is required';
-      } else if (/^(\+)?[0-9]{10,14}/.test(values.phone)) {
+      } else if (!/^(\+)?[0-9]{10,14}$/.test(values.phone)) {
         errors.phone = 'Invalid phone number';
       }
 
