@@ -85,9 +85,11 @@ export const NavigationMobile = styled.nav`
     align-items: center;
     justify-content: space-between;
     position: absolute;
+    left: 0;
     top: 100%;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
     background: #212428;
     transition: all 0.3s;
     ${SideInAnimation()};
