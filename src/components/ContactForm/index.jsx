@@ -75,7 +75,7 @@ export const ContactForm = () => {
 
       if (!values.phone) {
         errors.phone = 'Phone is required';
-      } else if (!/^[0-9]{10}$/.test(values.phone)) {
+      } else if (!/(\+)?[0-9]{10, 14}/.test(values.phone)) {
         errors.phone = 'Invalid phone number';
       }
 
@@ -117,7 +117,9 @@ export const ContactForm = () => {
         className={formik.errors.phone && formik.touched.phone ? 'error' : ''}
         type='text'
         name='phone'
-        placeholder={formik.errors.phone && formik.touched.phone ? formik.errors.phone : 'Phone'}
+        placeholder={
+          formik.errors.phone && formik.touched.phone ? formik.errors.phone : 'Phone (without parentheses and spaces)'
+        }
         onChange={formik.handleChange}
         value={formik.values.phone}
         onBlur={formik.handleBlur}
