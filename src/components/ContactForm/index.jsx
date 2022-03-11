@@ -1,4 +1,6 @@
 import { useFormik } from 'formik';
+import Airtable from 'airtable';
+const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE);
 
 export const ContactForm = () => {
   const formik = useFormik({
@@ -11,6 +13,29 @@ export const ContactForm = () => {
     onSubmit: (values) => {
       console.log(values);
       formik.resetForm();
+
+      base('Clients').create(
+        [
+          {
+            fields: {
+              Date: new Date().toDateString(),
+              Name: values.name,
+              Email: values.email,
+              Phone: values.phone,
+              Message: values.message,
+            },
+          },
+        ],
+        function (err, records) {
+          if (err) {
+            console.error(err);
+            return;
+          }
+          records.forEach(function (record) {
+            console.log(record.getId());
+          });
+        }
+      );
     },
     errors: {
       name: '',
