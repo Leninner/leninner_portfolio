@@ -20,7 +20,7 @@ export const ProjectDetails = (props) => {
     <>
       {id ? (
         <>
-          <Return to='/home'>
+          <Return to='/'>
             <span>
               <BiArrowBack />
               <p>Back</p>

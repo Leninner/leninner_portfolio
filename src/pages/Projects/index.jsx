@@ -19,7 +19,7 @@ export const Projects = () => {
 
       <ProjectsContainer>
         <header>
-          <Span className='back' to='/home'>
+          <Span className='back' to='/'>
             <p>
               <BiArrowBack />
               Back
