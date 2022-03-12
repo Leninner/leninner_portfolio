@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export const BoxFeedback = styled.div`
+export const BoxFeedback = styled.a`
   background-color: #f03e3e;
+  text-decoration: none;
   position: fixed;
   right: 3vh;
   color: #ffffff;
