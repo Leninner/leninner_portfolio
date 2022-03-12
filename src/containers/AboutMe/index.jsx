@@ -1,15 +1,13 @@
 import { StyledAboutMe, ImgContainer, MeInfo, GetCv, MySelf } from './styles';
 import { MdArrowRightAlt } from 'react-icons/md';
 import cv from '../../utils/cv.pdf';
+import MyImage from '../../utils/me.png';
 
 export const AboutMe = () => {
   return (
     <StyledAboutMe>
       <ImgContainer>
-        <img
-          src='https://images.unsplash.com/photo-1601233749202-95d04d5b3c00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=838&q=80'
-          alt=''
-        />
+        <img src={MyImage} alt='This is me' />
       </ImgContainer>
 
       <div>

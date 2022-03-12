@@ -14,7 +14,7 @@ export const StyledMainView = styled.section`
 `;
 
 export const Me = styled.img`
-  width: 55%;
+  width: 100%;
   height: calc(100vh - 86px);
   object-fit: cover;
   object-position: center;

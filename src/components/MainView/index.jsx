@@ -11,6 +11,7 @@ import {
 import { MdArrowRightAlt } from 'react-icons/md';
 import { AiFillGithub } from 'react-icons/ai';
 import { BsMedium } from 'react-icons/bs';
+import MyImage from '../../utils/me.png';
 
 export const MainView = () => {
   return (
@@ -44,10 +45,8 @@ export const MainView = () => {
           </a>
         </ButtonsContainer>
       </AsideLeft>
-      <Me
-        src='https://images.unsplash.com/photo-1601233749202-95d04d5b3c00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=838&q=80'
-        alt=''
-      />
+
+      <Me src={MyImage} alt='me' />
     </StyledMainView>
   );
 };
