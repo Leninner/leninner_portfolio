@@ -21,6 +21,10 @@ export const Title = styled.h2`
   @media (max-width: 768px) {
     text-align: center;
   }
+
+  @media (max-width: 400px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const Container = styled.div`
@@ -28,7 +32,7 @@ export const Container = styled.div`
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
     /* centrar */
     justify-items: center;
@@ -44,6 +48,11 @@ export const Description = styled.p`
 
   @media (max-width: 768px) {
     width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.1rem;
   }
 `;
 

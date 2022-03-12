@@ -1,4 +1,4 @@
-import { StyledAboutMe, ImgContainer, MeInfo, GetCv, MySelf } from './styles';
+import { StyledAboutMe, ImgContainer, MeInfo, GetCv, MySelf, MeDescription } from './styles';
 import { MdArrowRightAlt } from 'react-icons/md';
 import cv from '../../utils/cv.pdf';
 import MyImage from '../../utils/me.png';
@@ -10,7 +10,7 @@ export const AboutMe = () => {
         <img src={MyImage} alt='This is me' />
       </ImgContainer>
 
-      <div>
+      <MeDescription>
         <h1>
           <span>Work with a </span>problem solver
         </h1>
@@ -43,6 +43,7 @@ export const AboutMe = () => {
               </a>
             </div>
           </section>
+
           <section>
             <div>
               <span>Phone:</span>
@@ -50,7 +51,7 @@ export const AboutMe = () => {
             </div>
             <div>
               <span>Twitter:</span>
-              <a href='/'>
+              <a href='https://twitter.com/_leninner' target='_blank' rel='noreferrer'>
                 <p>@_leninner</p>
               </a>
             </div>
@@ -61,7 +62,7 @@ export const AboutMe = () => {
           <p>Descargar CV</p>
           <MdArrowRightAlt size='32' />
         </GetCv>
-      </div>
+      </MeDescription>
     </StyledAboutMe>
   );
 };

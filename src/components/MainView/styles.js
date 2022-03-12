@@ -91,6 +91,10 @@ export const ButtonsContainer = styled.div`
       filter: drop-shadow(0 0 0.2rem #03bd9a);
     }
   }
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
 `;
 
 export const SeeProjects = styled(Link)`
@@ -126,6 +130,14 @@ export const SeeProjects = styled(Link)`
     padding: 10px 20px;
     font-size: 0.8rem;
   }
+
+  @media (max-width: 400px) {
+    margin: 20px 0;
+  }
+`;
+
+export const BoxSocial = styled.div`
+  display: flex;
 `;
 
 export const ButtonLinkedIn = styled.button`

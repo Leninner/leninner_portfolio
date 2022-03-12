@@ -7,6 +7,7 @@ import {
   ButtonsContainer,
   ButtonLinkedIn,
   Span,
+  BoxSocial,
 } from './styles';
 import { MdArrowRightAlt } from 'react-icons/md';
 import { AiFillGithub } from 'react-icons/ai';
@@ -28,21 +29,23 @@ export const MainView = () => {
             </span>
           </SeeProjects>
 
-          <a href='https://www.linkedin.com/in/leninner/' target='_blank' rel='noreferrer'>
-            <ButtonLinkedIn>LinkedIn</ButtonLinkedIn>
-          </a>
+          <BoxSocial>
+            <a href='https://www.linkedin.com/in/leninner/' target='_blank' rel='noreferrer'>
+              <ButtonLinkedIn>LinkedIn</ButtonLinkedIn>
+            </a>
 
-          <a href='https://github.com/leninner' target='_blank' rel='noreferrer'>
-            <ButtonIcons>
-              <AiFillGithub />
-            </ButtonIcons>
-          </a>
+            <a href='https://github.com/leninner' target='_blank' rel='noreferrer'>
+              <ButtonIcons>
+                <AiFillGithub />
+              </ButtonIcons>
+            </a>
 
-          <a href='https://medium.com/@leninner' target='_blank' rel='noreferrer'>
-            <ButtonIcons>
-              <BsMedium />
-            </ButtonIcons>
-          </a>
+            <a href='https://medium.com/@leninner' target='_blank' rel='noreferrer'>
+              <ButtonIcons>
+                <BsMedium />
+              </ButtonIcons>
+            </a>
+          </BoxSocial>
         </ButtonsContainer>
       </AsideLeft>
 

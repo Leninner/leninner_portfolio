@@ -17,17 +17,10 @@ export const StyledAboutMe = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 85%;
+    width: 100%;
     flex-direction: column;
     text-align: center;
     align-items: center;
-
-    div {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
 
     h1 {
       margin-top: 1.7rem;
@@ -40,8 +33,16 @@ export const StyledAboutMe = styled.div`
   }
 `;
 
-export const ImgContainer = styled.div`
+export const MeDescription = styled.div`
   width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ImgContainer = styled.div`
+  width: 90%;
   padding: 20px 0;
   margin: 0 10vh 0 0;
   object-fit: cover;
@@ -71,9 +72,13 @@ export const ImgContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
     margin: 0;
     height: 300px;
+  }
+
+  @media (max-width: 425px) {
+    width: 75%;
   }
 `;
 
@@ -110,6 +115,13 @@ export const MeInfo = styled.div`
   @media (max-width: 768px) {
     padding: 2vh;
     width: 95%;
+    flex-direction: column;
+  }
+
+  @media (max-width: 425px) {
+    p {
+      font-size: 1rem;
+    }
   }
 `;
 
