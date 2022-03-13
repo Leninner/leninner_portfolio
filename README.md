@@ -1,28 +1,25 @@
-<!-- Please update value in the {}  -->
-
 <h1 align="center">Personal Portfolio</h1>
 
 <div align="center">
-   Now in construction
+   Portfolio to showcase my featured work
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://leninner.vercel.app/home">
-      Demo
+    <a href="https://leninner.vercel.app">
+      Site
      </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x">
-      Feedback
+    <a href="https://api.whatsapp.com/send?phone=593979424062&text=Hi%20Lenin,%20I%20saw%20your%20portfolio%20and%20I%20have%20feedback%20for%20you...">
+      FeedBack
     </a>
   </h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
 
-## Table of Contents
+**Table of Contents**
 
-- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
@@ -34,48 +31,23 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![Personal Portfolio](https://user-images.githubusercontent.com/67031243/158027249-3115652d-2b41-48cc-b56c-ac237d8cd3a3.png)
 
-This portfolio is very awesome. In this I will push my featured projects.
+This portfolio is very awesome. In this I will push my featured work.
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+You can see my portfolio in this [link](https://leninner.vercel.app/)
+
+When I was building this project, I was able to learn a lot about responsive design, I was able to improve my coding skills. It was a great experience
+Improved my understanding of CSS and the way components are structured in terms of styling on a website
 
 ### Built With
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
 - [React](https://reactjs.org/)
-- [Redux](https://redux.js.org/)
 - [Styled Components](https://styled-components.com/)
+- [React Router V6](https://reactrouter.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Photoshop](https://www.adobe.com/la/products/photoshop.html)
 
-## Features
-
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
-
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x) was to build an application to complete the given user stories:
-
--
-
-## How To Use
-
-<!-- Example: -->
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
-From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/Leninner/leninner_portfolio/
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
 
 ## Acknowledgements
 
