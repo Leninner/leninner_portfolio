@@ -35,7 +35,6 @@ export const StyledAboutMe = styled.div`
 
 export const MeDescription = styled.div`
   width: 100%;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,6 +88,7 @@ export const MeInfo = styled.div`
   background: linear-gradient(0deg, rgba(28, 30, 32, 1) 60%, rgba(41, 44, 46, 1) 100%);
   border-radius: 2vh;
   padding: 2vh 4vh;
+  width: 100%;
 
   div {
     margin: 0 0 3vh 0;
