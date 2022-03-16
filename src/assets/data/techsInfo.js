@@ -7,6 +7,7 @@ import {
   SiHtml5,
   SiSass,
   SiReact,
+  SiTypescript,
 } from 'react-icons/si';
 
 const SIZE = 50;
@@ -65,5 +66,11 @@ export const TechsInfo = {
     link: 'https://developer.mozilla.org/es/docs/Web/HTML',
     description:
       'HTML (HyperText Markup Language) is the most basic component of the Web. Defines the meaning and structure of web content.',
+  },
+  TypeScript: {
+    name: 'TypeScript',
+    Icon: <SiTypescript size={SIZE} />,
+    link: 'https://www.typescriptlang.org/',
+    description: 'TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.',
   },
 };

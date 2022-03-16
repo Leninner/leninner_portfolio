@@ -3,8 +3,9 @@ import shoppingifyList from '../../utils/projectsPhotos/shoppingifyList.png';
 import battleship from '../../utils/projectsPhotos/battleship.png';
 import ropaShop from '../../utils/projectsPhotos/ropaShop.png';
 import mini from '../../utils/projectsPhotos/mini.png';
+import advice from '../../utils/projectsPhotos/advice.png';
 
-const { React, Redux, StyledComponents, ReactRouter, TailwindCSS, Sass, JavaScript, HTML } = TechsInfo;
+const { React, Redux, StyledComponents, ReactRouter, TailwindCSS, Sass, JavaScript, HTML, TypeScript } = TechsInfo;
 
 export const projectsData = [
   {
@@ -84,5 +85,15 @@ export const projectsData = [
     techInfo: [React, ReactRouter, TailwindCSS],
     preview: 'https://mini-challenges.vercel.app/',
     repo: 'https://github.com/Leninner/mini_challenges_react_platzi',
+  },
+  {
+    id: 5,
+    title: 'Advice Generator App',
+    description: 'This project gives you a random advice from a list of advices',
+    image: advice,
+    userStories: ['Tthe user can reload the page to get a new advice', 'The user can see an advice in a cool way'],
+    techInfo: [React, TypeScript, TailwindCSS],
+    preview: 'https://advice-generator-ts.vercel.app/',
+    repo: 'https://github.com/Leninner/advice-generator-ts',
   },
 ];
