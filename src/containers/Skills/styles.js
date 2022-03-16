@@ -54,6 +54,7 @@ export const SkillsItems = styled.div`
       font-size: 1.2rem;
       color: #c1c1c1;
       margin-top: 1rem;
+      text-align: center;
     }
 
     svg {

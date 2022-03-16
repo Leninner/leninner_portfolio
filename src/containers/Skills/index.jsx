@@ -1,6 +1,6 @@
 import { SkillsContainer, SkillsItems } from './styles';
 import { DiJavascript1, DiReact, DiSass, DiGithubBadge } from 'react-icons/di';
-import { SiTailwindcss, SiRedux } from 'react-icons/si';
+import { SiTailwindcss, SiRedux, SiTypescript } from 'react-icons/si';
 
 export const Skills = () => {
   const SIZE = '6rem';
@@ -26,6 +26,11 @@ export const Skills = () => {
         <div>
           <SiRedux size={SIZE} color={COLOR} />
           <span>Redux</span>
+        </div>
+
+        <div>
+          <SiTypescript size={SIZE} color={COLOR} />
+          <span>TypeScript</span>
         </div>
 
         <div>
