@@ -4,6 +4,7 @@ import battleship from '../../utils/projectsPhotos/battleship.png';
 import ropaShop from '../../utils/projectsPhotos/ropaShop.png';
 import mini from '../../utils/projectsPhotos/mini.png';
 import advice from '../../utils/projectsPhotos/advice.png';
+import calculator from '../../utils/projectsPhotos/calculator.png';
 
 const { React, Redux, StyledComponents, ReactRouter, TailwindCSS, Sass, JavaScript, HTML, TypeScript, CSS3 } =
   TechsInfo;
@@ -101,7 +102,7 @@ export const projectsData = [
     id: 6,
     title: 'Cool Calculator',
     description: 'In this project you can find the result of any operation you want',
-    image: advice,
+    image: calculator,
     userStories: [
       'The user can see the result of any operation',
       'The User can see the result in a cool way',
