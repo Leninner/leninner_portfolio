@@ -110,7 +110,7 @@ export const projectsData = [
       'The user can change the colors of the calculator',
     ],
     techInfo: [JavaScript, HTML, CSS3],
-    preview: 'https://advice-generator-ts.vercel.app/',
-    repo: 'https://github.com/Leninner/advice-generator-ts',
+    preview: 'https://leninner.github.io/calculator/',
+    repo: 'https://github.com/Leninner/calculator',
   },
 ];
