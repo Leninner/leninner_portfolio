@@ -1,4 +1,12 @@
-import { StyledProjectsContainer, Title, Container, Description, ShowAllButton } from './styles';
+import {
+  StyledProjectsContainer,
+  Title,
+  Container,
+  Description,
+  ShowAllButton,
+  ProjectCounter,
+  ProjectsCounterContainer,
+} from './styles';
 import { ProjectInfo } from '../../components/ProjectInfo';
 import { projectsData } from '../../assets/data/projectsData';
 
@@ -16,6 +24,10 @@ export const ProjectsContainer = () => {
         Each project was built with <strong>high value tools</strong> like React, Redux and always looking to write a
         <strong>scalable and performant code.</strong>
       </Description>
+
+      <ProjectsCounterContainer>
+        Projects Counter: <ProjectCounter>{projects.length}</ProjectCounter>
+      </ProjectsCounterContainer>
 
       <Container>
         {projectsToDisplay.map((project) => (

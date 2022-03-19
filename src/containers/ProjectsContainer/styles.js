@@ -6,6 +6,31 @@ export const StyledProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+`;
+
+export const ProjectsCounterContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  margin: 2rem 0;
+`;
+
+export const ProjectCounter = styled.div`
+  width: 50px;
+  height: 50px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  color: #03bd9a;
+  filter: drop-shadow(0px 0px 5px #03bd9a);
 `;
 
 export const Title = styled.h2`
@@ -44,7 +69,6 @@ export const Description = styled.p`
   color: #ccc;
   width: 60%;
   text-align: center;
-  margin-bottom: 5rem;
 
   @media (max-width: 768px) {
     width: 80%;
