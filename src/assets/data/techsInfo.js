@@ -8,6 +8,8 @@ import {
   SiSass,
   SiReact,
   SiTypescript,
+  SiCss3,
+  SiGithub,
 } from 'react-icons/si';
 
 const SIZE = 50;
@@ -72,5 +74,19 @@ export const TechsInfo = {
     Icon: <SiTypescript size={SIZE} />,
     link: 'https://www.typescriptlang.org/',
     description: 'TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.',
+  },
+  CSS3: {
+    name: 'CSS3',
+    Icon: <SiCss3 size={SIZE} />,
+    link: 'https://developer.mozilla.org/es/docs/Web/CSS',
+    description:
+      'CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.',
+  },
+  Github: {
+    name: 'Github',
+    Icon: <SiGithub size={SIZE} />,
+    link: 'https://github.com/',
+    description:
+      'GitHub is a web-based hosting service for version control using Git. It is often used to host source code for open source projects.',
   },
 };

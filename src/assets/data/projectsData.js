@@ -5,7 +5,8 @@ import ropaShop from '../../utils/projectsPhotos/ropaShop.png';
 import mini from '../../utils/projectsPhotos/mini.png';
 import advice from '../../utils/projectsPhotos/advice.png';
 
-const { React, Redux, StyledComponents, ReactRouter, TailwindCSS, Sass, JavaScript, HTML, TypeScript } = TechsInfo;
+const { React, Redux, StyledComponents, ReactRouter, TailwindCSS, Sass, JavaScript, HTML, TypeScript, CSS3 } =
+  TechsInfo;
 
 export const projectsData = [
   {
@@ -88,11 +89,27 @@ export const projectsData = [
   },
   {
     id: 5,
-    title: 'Advice Generator App',
+    title: 'Advice Generator',
     description: 'This project gives you a random advice from a list of advices',
     image: advice,
     userStories: ['Tthe user can reload the page to get a new advice', 'The user can see an advice in a cool way'],
     techInfo: [React, TypeScript, TailwindCSS],
+    preview: 'https://advice-generator-ts.vercel.app/',
+    repo: 'https://github.com/Leninner/advice-generator-ts',
+  },
+  {
+    id: 6,
+    title: 'Cool Calculator',
+    description: 'In this project you can find the result of any operation you want',
+    image: advice,
+    userStories: [
+      'The user can see the result of any operation',
+      'The User can see the result in a cool way',
+      "The user can't see the result of the operation if the input is empty",
+      "The user can't see the result of the operation if the input is not a number",
+      'The user can change the colors of the calculator',
+    ],
+    techInfo: [JavaScript, HTML, CSS3],
     preview: 'https://advice-generator-ts.vercel.app/',
     repo: 'https://github.com/Leninner/advice-generator-ts',
   },
