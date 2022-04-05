@@ -5,6 +5,7 @@ import ropaShop from '../../utils/projectsPhotos/ropaShop.png';
 import mini from '../../utils/projectsPhotos/mini.png';
 import advice from '../../utils/projectsPhotos/advice.png';
 import calculator from '../../utils/projectsPhotos/calculator.png';
+import githubJobs from '../../utils/projectsPhotos/githubJobs.png';
 
 const { React, Redux, StyledComponents, ReactRouter, TailwindCSS, Sass, JavaScript, HTML, TypeScript, CSS3 } =
   TechsInfo;
@@ -12,6 +13,28 @@ const { React, Redux, StyledComponents, ReactRouter, TailwindCSS, Sass, JavaScri
 export const projectsData = [
   {
     id: 1,
+    title: 'GitHub Jobs',
+    description:
+      'This project is really simple. It`s a web app that shows you the latest jobs from Jooble.com. You can use it to find the best job for you. The Demo is hosted on Vercel, it´s free to try. Look out for the Demo and the Solution. The experince with this project was really good. I learned a lot about pagination, how to use the API and how to use the React framework. I advice you to try it out.',
+    image: githubJobs,
+    userStories: [
+      '✅ User story: I can see a list of jobs in a city by default',
+      '✅ User story: I can search for jobs with a given keyword',
+      '✅ User story: I can search for jobs with a city name, zip code, or other location',
+      '✅ User story: I can select one option from at least 4 pre-defined options',
+      '✅ User story: I can search for a full-time job only',
+      '✅ User story: I can see a list of jobs with their logo, company name, location, and posted time.',
+      '✅ User story: When I select a job, I can see job descriptions and how to apply like the given design.',
+      '✅ User story: When I am on the job details page, I can go back to the search page',
+      '✅ User story (optional): I can see a list of jobs in the closest city from my location by default',
+      '✅ User story (optional): I can see jobs on different pages, 5 items on each page',
+    ],
+    techInfo: [React, StyledComponents, ReactRouter, TypeScript, JavaScript],
+    preview: 'https://github-jobs-tech.vercel.app/',
+    repo: 'https://github.com/Leninner/github-jobs',
+  },
+  {
+    id: 2,
     title: 'Shoppingify List',
     description:
       'Shoppingify List allows you to take your shopping list wherever you go. You can add items to your list and also, you can see the history of your shopping list. All your data is stored in your browser, so you can always come back to it.',
@@ -38,7 +61,7 @@ export const projectsData = [
     repo: 'https://github.com/Leninner/shoppingify-list',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Battleship Game',
     description:
       'BattleShip is a game where you try to destroy your opponent’s fleet. You can play with the computer and see who is the best player.',
@@ -54,7 +77,7 @@ export const projectsData = [
     repo: 'https://github.com/Leninner/battleship',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Ropa Shop',
     description:
       'This site is built with the atomic design pattern that allows to have a correct organization of directories. The technologies used in this project are highly efficient with the system requirements.',
@@ -71,7 +94,7 @@ export const projectsData = [
     repo: 'https://github.com/Leninner/e-anime-shop',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Mini|Big Challenges',
     description:
       'This project consists of 3 great little projects to improve and increase my development skills with a to-do app, a music player and a Gif finder.',
@@ -89,7 +112,7 @@ export const projectsData = [
     repo: 'https://github.com/Leninner/mini_challenges_react_platzi',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Advice Generator',
     description: 'This project gives you a random advice from a list of advices',
     image: advice,
@@ -99,7 +122,7 @@ export const projectsData = [
     repo: 'https://github.com/Leninner/advice-generator-ts',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Cool Calculator',
     description: 'In this project you can find the result of any operation you want',
     image: calculator,
