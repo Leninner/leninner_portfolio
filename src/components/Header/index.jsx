@@ -3,6 +3,7 @@ import Logo from '../../utils/logo.png';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
 import { animateScroll } from 'react-scroll/modules';
+import { motion } from 'framer-motion';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +49,7 @@ export const Header = () => {
   ];
 
   return (
-    <StyledHeader>
+    <StyledHeader as={motion.header} initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 0.5 }}>
       <ImgLogo src={Logo} alt='LE' onClick={handleScroll} />
       <NavigationDesktop>
         <StyledNavLink to='/' onClick={handleScroll}>
@@ -60,9 +61,7 @@ export const Header = () => {
           </StyledLink>
         ))}
       </NavigationDesktop>
-
       {isOpen ? <AiOutlineClose size='25' onClick={handleClick} /> : <AiOutlineMenu size='25' onClick={handleClick} />}
-
       <NavigationMobile isOpen={isOpen}>
         <StyledNavLink to='/' onClick={handleScroll}>
           HOME

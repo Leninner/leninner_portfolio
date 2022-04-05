@@ -13,14 +13,43 @@ import { MdArrowRightAlt } from 'react-icons/md';
 import { AiFillGithub } from 'react-icons/ai';
 import { BsMedium } from 'react-icons/bs';
 import MyImage from '../../utils/me.png';
+import { motion } from 'framer-motion';
 
 export const MainView = () => {
   return (
     <StyledMainView>
       <AsideLeft>
-        <Span>Hello, I'm</Span>
-        <h1>Lenin Mazabanda</h1>
-        <h4>Front-end Developer</h4>
+        <Span
+          as={motion.span}
+          drag
+          dragConstraints={{
+            top: -50,
+            left: -50,
+            right: 50,
+            bottom: 50,
+          }}>
+          Hello, I'm
+        </Span>
+        <motion.h1
+          drag
+          dragConstraints={{
+            top: -100,
+            left: -100,
+            right: 100,
+            bottom: 100,
+          }}>
+          Lenin Mazabanda
+        </motion.h1>
+        <motion.h4
+          drag
+          dragConstraints={{
+            top: -100,
+            left: -100,
+            right: 100,
+            bottom: 100,
+          }}>
+          Front-end Developer
+        </motion.h4>
 
         <ButtonsContainer>
           <SeeProjects to='projects' spy='true' smooth='true' offset={-70} duration={500}>

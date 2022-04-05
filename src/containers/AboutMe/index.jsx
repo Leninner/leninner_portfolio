@@ -2,12 +2,23 @@ import { StyledAboutMe, ImgContainer, MeInfo, GetCv, MySelf, MeDescription } fro
 import { MdArrowRightAlt } from 'react-icons/md';
 import cv from '../../utils/cv.pdf';
 import MyImage from '../../utils/me.png';
+import { motion } from 'framer-motion';
 
 export const AboutMe = () => {
   return (
     <StyledAboutMe>
       <ImgContainer>
-        <img src={MyImage} alt='This is me' />
+        <motion.img
+          src={MyImage}
+          alt='This is me'
+          drag
+          dragConstraints={{
+            top: -50,
+            left: -50,
+            right: 50,
+            bottom: 50,
+          }}
+        />
       </ImgContainer>
 
       <MeDescription>

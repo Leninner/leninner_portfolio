@@ -9,6 +9,7 @@
     "airtable": "^0.11.2",
     "axios": "^0.26.1",
     "formik": "^2.2.9",
+    "framer-motion": "^6.2.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",

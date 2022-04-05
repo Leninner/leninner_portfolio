@@ -1,9 +1,29 @@
 import { ServiceBoxContainer, ServiceIntro, Description, Features, KnowMore } from './styles';
 import { AiFillCheckCircle, AiOutlineArrowRight } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 export const ServiceBox = ({ title, description, image, features }) => {
+  const cardVariants = {
+    offscreen: {
+      y: 300,
+    },
+    onscreen: {
+      y: 0,
+      transition: {
+        type: 'spring',
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
+
   return (
-    <ServiceBoxContainer>
+    <ServiceBoxContainer
+      as={motion.div}
+      initial='offscreen'
+      variants={cardVariants}
+      whileInView='onscreen'
+      viewport={{ once: true }}>
       <ServiceIntro>
         {image}
         <h3>{title}</h3>
