@@ -6,6 +6,7 @@ import mini from '../../utils/projectsPhotos/mini.png';
 import advice from '../../utils/projectsPhotos/advice.png';
 import calculator from '../../utils/projectsPhotos/calculator.png';
 import githubJobs from '../../utils/projectsPhotos/githubJobs.png';
+import catWiki from '../../utils/projectsPhotos/catWiki.png';
 
 const { React, Redux, StyledComponents, ReactRouter, TailwindCSS, Sass, JavaScript, HTML, TypeScript, CSS3 } =
   TechsInfo;
@@ -13,6 +14,24 @@ const { React, Redux, StyledComponents, ReactRouter, TailwindCSS, Sass, JavaScri
 export const projectsData = [
   {
     id: 1,
+    title: 'Cat Wiki',
+    description:
+      'The purpose of this project is to show the information of cat breeds in a very cool way. The user can search for a cat breed and see the information of the breed. The user can also see the pictures of the breed and the videos of the breed.',
+    image: catWiki,
+    userStories: [
+      '✅ User story: I can search for cat breeds and select a breed of my choice',
+      '✅ User story: I can see the most popular searched cat breeds summary on the homepage',
+      '✅ User story: I can see the top 10 most searched cat breeds',
+      '✅ User story: I can see the breed details including description, temperament, origin, life span,adaptability, affection level, child-friendly, grooming, intelligence, health issues, social needs, stranger friendly',
+      '✅ User story: I can see more photo of the breed',
+      '✅ User story: On mobile, when I select the search option, a modal for breed search should pop up',
+    ],
+    techInfo: [React, StyledComponents, ReactRouter, JavaScript],
+    preview: 'https://the-cat-wiki.vercel.app/',
+    repo: 'https://github.com/Leninner/cat-wiki',
+  },
+  {
+    id: 2,
     title: 'GitHub Jobs',
     description:
       'This project is really simple. It`s a web app that shows you the latest jobs from Jooble.com. You can use it to find the best job for you. The Demo is hosted on Vercel, it´s free to try. Look out for the Demo and the Solution. The experince with this project was really good. I learned a lot about pagination, how to use the API and how to use the React framework. I advice you to try it out.',
@@ -34,7 +53,7 @@ export const projectsData = [
     repo: 'https://github.com/Leninner/github-jobs',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Shoppingify List',
     description:
       'Shoppingify List allows you to take your shopping list wherever you go. You can add items to your list and also, you can see the history of your shopping list. All your data is stored in your browser, so you can always come back to it.',
@@ -61,7 +80,7 @@ export const projectsData = [
     repo: 'https://github.com/Leninner/shoppingify-list',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Battleship Game',
     description:
       'BattleShip is a game where you try to destroy your opponent’s fleet. You can play with the computer and see who is the best player.',
@@ -77,7 +96,7 @@ export const projectsData = [
     repo: 'https://github.com/Leninner/battleship',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Ropa Shop',
     description:
       'This site is built with the atomic design pattern that allows to have a correct organization of directories. The technologies used in this project are highly efficient with the system requirements.',
@@ -94,7 +113,7 @@ export const projectsData = [
     repo: 'https://github.com/Leninner/e-anime-shop',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Mini|Big Challenges',
     description:
       'This project consists of 3 great little projects to improve and increase my development skills with a to-do app, a music player and a Gif finder.',
@@ -112,7 +131,7 @@ export const projectsData = [
     repo: 'https://github.com/Leninner/mini_challenges_react_platzi',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Advice Generator',
     description: 'This project gives you a random advice from a list of advices',
     image: advice,
@@ -122,7 +141,7 @@ export const projectsData = [
     repo: 'https://github.com/Leninner/advice-generator-ts',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Cool Calculator',
     description: 'In this project you can find the result of any operation you want',
     image: calculator,
