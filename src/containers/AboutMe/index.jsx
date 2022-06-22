@@ -1,8 +1,8 @@
-import { StyledAboutMe, ImgContainer, MeInfo, GetCv, MySelf, MeDescription } from './styles';
-import { MdArrowRightAlt } from 'react-icons/md';
-import cv from '../../utils/cv.pdf';
-import MyImage from '../../utils/me.png';
-import { motion } from 'framer-motion';
+import { StyledAboutMe, ImgContainer, MeInfo, GetCv, MySelf, MeDescription } from './styles'
+import { MdArrowRightAlt } from 'react-icons/md'
+import cv from '../../utils/cv.pdf'
+import MyImage from '../../utils/me.png'
+import { motion } from 'framer-motion'
 
 export const AboutMe = () => {
   return (
@@ -10,7 +10,7 @@ export const AboutMe = () => {
       <ImgContainer>
         <motion.img
           src={MyImage}
-          alt='This is me'
+          alt="This is me"
           drag
           dragConstraints={{
             top: -50,
@@ -49,7 +49,7 @@ export const AboutMe = () => {
             </div>
             <div>
               <span>Email:</span>
-              <a href='/'>
+              <a href="/">
                 <p>mazabandalenin180@gmail.com</p>
               </a>
             </div>
@@ -62,18 +62,18 @@ export const AboutMe = () => {
             </div>
             <div>
               <span>Twitter:</span>
-              <a href='https://twitter.com/_leninner' target='_blank' rel='noreferrer'>
+              <a href="https://twitter.com/_leninner" target="_blank" rel="noreferrer">
                 <p>@_leninner</p>
               </a>
             </div>
           </section>
         </MeInfo>
 
-        <GetCv download='Frontend_Developer_Lenin_Mazabanda.pdf' href={cv} target='_blank'>
+        <GetCv download="Frontend_Developer_Lenin_Mazabanda.pdf" href={cv} target="_blank">
           <p>Descargar CV</p>
-          <MdArrowRightAlt size='32' />
+          <MdArrowRightAlt size="32" />
         </GetCv>
       </MeDescription>
     </StyledAboutMe>
-  );
-};
+  )
+}

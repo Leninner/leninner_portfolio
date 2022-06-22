@@ -1,6 +1,6 @@
-import { Footer } from '../../components/Footer';
-import { SendFeedback } from '../../components/SendFeedback';
-import styled from 'styled-components';
+import { Footer } from '../../components/Footer'
+import { SendFeedback } from '../../components/SendFeedback'
+import styled from 'styled-components'
 
 export const Layout = ({ children }) => {
   return (
@@ -9,7 +9,7 @@ export const Layout = ({ children }) => {
       <SendFeedback />
       <Footer />
     </Container>
-  );
-};
+  )
+}
 
-const Container = styled.div``;
+const Container = styled.div``

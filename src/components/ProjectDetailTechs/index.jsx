@@ -1,6 +1,6 @@
-import { ProjectDetailTechsContainer, TechItem } from './styles';
-import { TechItemComponent } from '../TechItemComponent';
-import { Description, Title } from '../ProjectTechInfo/styles';
+import { ProjectDetailTechsContainer, TechItem } from './styles'
+import { TechItemComponent } from '../TechItemComponent'
+import { Description, Title } from '../ProjectTechInfo/styles'
 
 export const ProjectDetailTechs = ({ techInfo }) => {
   return (
@@ -12,5 +12,5 @@ export const ProjectDetailTechs = ({ techInfo }) => {
         ))}
       </Description>
     </ProjectDetailTechsContainer>
-  );
-};
+  )
+}

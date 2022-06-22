@@ -1,13 +1,13 @@
-import { ProjectMainInfo } from '../ProjectMainInfo';
-import { ProjectTechInfo } from '../ProjectTechInfo';
-import { StyledProjectInfo, Container } from './styles';
+import { ProjectMainInfo } from '../ProjectMainInfo'
+import { ProjectTechInfo } from '../ProjectTechInfo'
+import { StyledProjectInfo, Container } from './styles'
 
 export const ProjectInfo = ({ title, description, image, techInfo, preview, id }) => {
-  const posiblesColors = ['#00b4d8', '#0091ad', '#ff7d00', '#ff0054'];
+  const posiblesColors = ['#00b4d8', '#0091ad', '#ff7d00', '#ff0054']
 
-  const colorToUse = posiblesColors[Math.floor(Math.random() * posiblesColors.length)];
+  const colorToUse = posiblesColors[Math.floor(Math.random() * posiblesColors.length)]
 
-  console.log(techInfo);
+  console.log(techInfo)
 
   return (
     <StyledProjectInfo>
@@ -23,5 +23,5 @@ export const ProjectInfo = ({ title, description, image, techInfo, preview, id }
         />
       </Container>
     </StyledProjectInfo>
-  );
-};
+  )
+}

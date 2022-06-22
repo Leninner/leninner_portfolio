@@ -1,25 +1,25 @@
-import { Title } from '../ProjectsContainer/styles';
-import { BlogContainer, ShowAllButton } from './styles';
-import { PostBox } from '../../components/PostBox';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { Title } from '../ProjectsContainer/styles'
+import { BlogContainer, ShowAllButton } from './styles'
+import { PostBox } from '../../components/PostBox'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 export const Blog = () => {
-  const [posts, setPosts] = useState({ loading: true, data: [] });
+  const [posts, setPosts] = useState({ loading: true, data: [] })
 
   useEffect(() => {
     const getSome = async () => {
       const res = await axios(
         'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40leninner'
-      );
+      )
 
-      setPosts({ loading: false, data: res.data.items });
-    };
+      setPosts({ loading: false, data: res.data.items })
+    }
 
-    getSome();
-  }, []);
+    getSome()
+  }, [])
 
-  const { loading, data } = posts;
+  const { loading, data } = posts
 
   return (
     <>
@@ -34,9 +34,9 @@ export const Blog = () => {
         ))}
       </BlogContainer>
 
-      <ShowAllButton href='https://medium.com/@leninner' target='_blank' rel='noreferrer'>
+      <ShowAllButton href="https://medium.com/@leninner" target="_blank" rel="noreferrer">
         Show All
       </ShowAllButton>
     </>
-  );
-};
+  )
+}

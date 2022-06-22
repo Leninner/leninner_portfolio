@@ -1,4 +1,9 @@
-import { AchievementsContainer, AchievementTitle, AchievementsData, AchievementItem } from './styles';
+import {
+  AchievementsContainer,
+  AchievementTitle,
+  AchievementsData,
+  AchievementItem,
+} from './styles';
 import { MdVerified, MdAddTask, MdSupervisedUserCircle } from 'react-icons/md';
 
 export const Achievements = () => {
@@ -14,7 +19,7 @@ export const Achievements = () => {
         <AchievementItem>
           <MdAddTask size='50' color='#069c83' />
           <div>
-            <h2>54</h2>
+            <h2>21</h2>
             <p>Projects complete</p>
           </div>
         </AchievementItem>

@@ -1,9 +1,9 @@
-import { ContactContainer, AsideContact, ContactInfo } from './styles';
-import { ContactForm } from '../ContactForm';
+import { ContactContainer, AsideContact, ContactInfo } from './styles'
+import { ContactForm } from '../ContactForm'
 
 export const Contact = () => {
   return (
-    <ContactContainer id='contact'>
+    <ContactContainer id="contact">
       <AsideContact>
         <ContactInfo>
           <h3>
@@ -26,5 +26,5 @@ export const Contact = () => {
         <ContactForm />
       </AsideContact>
     </ContactContainer>
-  );
-};
+  )
+}

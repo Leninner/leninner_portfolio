@@ -1,26 +1,26 @@
-import { ProjectDetailTechs } from '../ProjectDetailTechs';
-import { ProjectDetailsContainer, Return } from './styles';
-import { ProjectDetailOverview } from '../ProjectDetailOverview';
-import { useParams } from 'react-router-dom';
-import { projectsData } from '../../assets/data/projectsData';
-import { BiArrowBack } from 'react-icons/bi';
-import { useEffect } from 'react';
+import { ProjectDetailTechs } from '../ProjectDetailTechs'
+import { ProjectDetailsContainer, Return } from './styles'
+import { ProjectDetailOverview } from '../ProjectDetailOverview'
+import { useParams } from 'react-router-dom'
+import { projectsData } from '../../assets/data/projectsData'
+import { BiArrowBack } from 'react-icons/bi'
+import { useEffect } from 'react'
 
 export const ProjectDetails = (props) => {
-  const { techInfo } = props;
-  const { id } = useParams();
+  const { techInfo } = props
+  const { id } = useParams()
 
-  const project = projectsData.find((project) => project.id === parseInt(id));
+  const project = projectsData.find((project) => project.id === parseInt(id))
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <>
       {id ? (
         <>
-          <Return to='/'>
+          <Return to="/">
             <span>
               <BiArrowBack />
               <p>Back</p>
@@ -39,5 +39,5 @@ export const ProjectDetails = (props) => {
         </ProjectDetailsContainer>
       )}
     </>
-  );
-};
+  )
+}

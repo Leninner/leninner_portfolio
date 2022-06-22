@@ -6,12 +6,12 @@ import {
   Button,
   ButtonContainer,
   Description,
-} from './styles';
-import { GoRepo } from 'react-icons/go';
-import { AiOutlineLink } from 'react-icons/ai';
+} from './styles'
+import { GoRepo } from 'react-icons/go'
+import { AiOutlineLink } from 'react-icons/ai'
 
 export const ProjectDetailOverview = ({ title, preview, description, image, repo, userStories }) => {
-  const titleProject = title.split(' ');
+  const titleProject = title.split(' ')
 
   return (
     <ProjectDetailOverviewContainer>
@@ -24,11 +24,11 @@ export const ProjectDetailOverview = ({ title, preview, description, image, repo
           </h1>
 
           <ButtonContainer>
-            <Button repo href={repo} target='_blank' rel='noreferrer'>
+            <Button repo href={repo} target="_blank" rel="noreferrer">
               <span>Repository</span> <GoRepo />
             </Button>
 
-            <Button href={preview} target='_blank' rel='noreferrer'>
+            <Button href={preview} target="_blank" rel="noreferrer">
               <span>Visit </span>
               <AiOutlineLink />
             </Button>
@@ -42,11 +42,11 @@ export const ProjectDetailOverview = ({ title, preview, description, image, repo
 
           <ul>
             {userStories.map((feature, index) => {
-              return <li key={index}>{feature}</li>;
+              return <li key={index}>{feature}</li>
             })}
           </ul>
         </Description>
       </ProjectInfo>
     </ProjectDetailOverviewContainer>
-  );
-};
+  )
+}

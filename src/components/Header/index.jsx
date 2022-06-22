@@ -1,25 +1,25 @@
-import { StyledHeader, StyledNavLink, NavigationDesktop, ImgLogo, NavigationMobile, StyledLink } from './styles';
-import Logo from '../../utils/logo.png';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { useState } from 'react';
-import { animateScroll } from 'react-scroll/modules';
-import { motion } from 'framer-motion';
+import { StyledHeader, StyledNavLink, NavigationDesktop, ImgLogo, NavigationMobile, StyledLink } from './styles'
+import Logo from '../../utils/logo.png'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { useState } from 'react'
+import { animateScroll } from 'react-scroll/modules'
+import { motion } from 'framer-motion'
 
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   const handleScroll = () => {
     animateScroll.scrollToTop({
       duration: 500,
       delay: 100,
       smooth: true,
-    });
-    setIsOpen(!isOpen);
-  };
+    })
+    setIsOpen(!isOpen)
+  }
 
   const navItems = [
     {
@@ -46,32 +46,32 @@ export const Header = () => {
       name: 'Contact',
       link: 'contact',
     },
-  ];
+  ]
 
   return (
     <StyledHeader as={motion.header} initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 0.5 }}>
-      <ImgLogo src={Logo} alt='LE' onClick={handleScroll} />
+      <ImgLogo src={Logo} alt="LE" onClick={handleScroll} />
       <NavigationDesktop>
-        <StyledNavLink to='/' onClick={handleScroll}>
+        <StyledNavLink to="/" onClick={handleScroll}>
           HOME
         </StyledNavLink>
         {navItems.map(({ name, link }, index) => (
-          <StyledLink to={link} spy='true' smooth='true' offset={-70} duration={500} key={index}>
+          <StyledLink to={link} spy="true" smooth="true" offset={-70} duration={500} key={index}>
             {name.toUpperCase()}
           </StyledLink>
         ))}
       </NavigationDesktop>
-      {isOpen ? <AiOutlineClose size='25' onClick={handleClick} /> : <AiOutlineMenu size='25' onClick={handleClick} />}
+      {isOpen ? <AiOutlineClose size="25" onClick={handleClick} /> : <AiOutlineMenu size="25" onClick={handleClick} />}
       <NavigationMobile isOpen={isOpen}>
-        <StyledNavLink to='/' onClick={handleScroll}>
+        <StyledNavLink to="/" onClick={handleScroll}>
           HOME
         </StyledNavLink>
         {navItems.map(({ name, link }, index) => (
-          <StyledLink to={link} spy='true' smooth='true' offset={-70} duration={500} onClick={handleClick} key={index}>
+          <StyledLink to={link} spy="true" smooth="true" offset={-70} duration={500} onClick={handleClick} key={index}>
             {name.toUpperCase()}
           </StyledLink>
         ))}
       </NavigationMobile>
     </StyledHeader>
-  );
-};
+  )
+}

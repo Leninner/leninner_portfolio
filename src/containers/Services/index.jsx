@@ -1,6 +1,6 @@
-import { Title, ServicesBoxContainer } from './styles';
-import { ServiceBox } from '../../components/ServiceBox';
-import { servicesData } from '../../assets/data/servicesData';
+import { Title, ServicesBoxContainer } from './styles'
+import { ServiceBox } from '../../components/ServiceBox'
+import { servicesData } from '../../assets/data/servicesData'
 
 export const Services = () => {
   return (
@@ -14,5 +14,5 @@ export const Services = () => {
         ))}
       </ServicesBoxContainer>
     </>
-  );
-};
+  )
+}

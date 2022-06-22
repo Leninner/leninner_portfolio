@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   width: 100%;
@@ -14,7 +14,7 @@ export const FooterContainer = styled.footer`
   @media (max-width: 768px) {
     margin-top: 200px;
   }
-`;
+`
 
 export const FooterButtonsContainer = styled.div`
   display: flex;
@@ -41,4 +41,4 @@ export const FooterButtonsContainer = styled.div`
       margin-top: 2rem;
     }
   }
-`;
+`

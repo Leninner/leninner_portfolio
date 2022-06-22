@@ -1,10 +1,10 @@
-import { SkillsContainer, SkillsItems } from './styles';
-import { DiJavascript1, DiReact, DiSass, DiGithubBadge } from 'react-icons/di';
-import { SiTailwindcss, SiRedux, SiTypescript } from 'react-icons/si';
+import { SkillsContainer, SkillsItems } from './styles'
+import { DiJavascript1, DiReact, DiSass, DiGithubBadge } from 'react-icons/di'
+import { SiTailwindcss, SiRedux, SiTypescript } from 'react-icons/si'
 
 export const Skills = () => {
-  const SIZE = '6rem';
-  const COLOR = 'white';
+  const SIZE = '6rem'
+  const COLOR = 'white'
 
   return (
     <SkillsContainer>
@@ -49,5 +49,5 @@ export const Skills = () => {
         </div>
       </SkillsItems>
     </SkillsContainer>
-  );
-};
+  )
+}

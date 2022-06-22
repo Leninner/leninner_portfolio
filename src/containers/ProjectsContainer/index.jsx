@@ -6,14 +6,14 @@ import {
   ShowAllButton,
   ProjectCounter,
   ProjectsCounterContainer,
-} from './styles';
-import { ProjectInfo } from '../../components/ProjectInfo';
-import { projectsData } from '../../assets/data/projectsData';
-import { motion } from 'framer-motion';
+} from './styles'
+import { ProjectInfo } from '../../components/ProjectInfo'
+import { projectsData } from '../../assets/data/projectsData'
+import { motion } from 'framer-motion'
 
 export const ProjectsContainer = () => {
-  const projects = [...projectsData];
-  const projectsToDisplay = projects.slice(0, 2);
+  const projects = [...projectsData]
+  const projectsToDisplay = projects.slice(0, 2)
 
   const cardVariants = {
     offscreen: {
@@ -27,7 +27,7 @@ export const ProjectsContainer = () => {
         duration: 0.8,
       },
     },
-  };
+  }
 
   return (
     <StyledProjectsContainer>
@@ -46,16 +46,17 @@ export const ProjectsContainer = () => {
 
       <Container
         as={motion.div}
-        initial='offscreen'
+        initial="offscreen"
         variants={cardVariants}
-        whileInView='onscreen'
-        viewport={{ once: true }}>
+        whileInView="onscreen"
+        viewport={{ once: true }}
+      >
         {projectsToDisplay.map((project) => (
           <ProjectInfo {...project} key={project.id} />
         ))}
       </Container>
 
-      <ShowAllButton to='/projects'>Show All</ShowAllButton>
+      <ShowAllButton to="/projects">Show All</ShowAllButton>
     </StyledProjectsContainer>
-  );
-};
+  )
+}
