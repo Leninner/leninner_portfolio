@@ -7,11 +7,39 @@ import advice from '../../utils/projectsPhotos/advice.png';
 import calculator from '../../utils/projectsPhotos/calculator.png';
 import githubJobs from '../../utils/projectsPhotos/githubJobs.png';
 import catWiki from '../../utils/projectsPhotos/catWiki.png';
+import alameda from '../../utils/projectsPhotos/alameda.png';
 
-const { React, Redux, StyledComponents, ReactRouter, TailwindCSS, Sass, JavaScript, HTML, TypeScript, CSS3 } =
-  TechsInfo;
+const {
+  React,
+  Redux,
+  StyledComponents,
+  ReactRouter,
+  TailwindCSS,
+  Sass,
+  JavaScript,
+  HTML,
+  TypeScript,
+  CSS3,
+} = TechsInfo;
 
 export const projectsData = [
+  {
+    id: 9,
+    title: 'Alameda Ecommerce',
+    description:
+      'This project is an ecommerce website inspired in a SquareSpace site. It is a ReactJS application with a Redux store. It is a responsive website that works on mobile, tablet and desktop.',
+    image: alameda,
+    userStories: [
+      '✅ User story: I can see the information of diferents clothes.',
+      '✅ User story: I can click on the pictures of the clothes and see the information of the clothes.',
+      '✅ User story: I can select the size and quantity of the clothes and see the total price of the clothes.',
+      '✅ User story: I can update the quantity of the clothes and see the total price of the clothes in the cart and checkout page',
+      '✅ User story: I can see beautiful effects when I hover over the clothes images in the main page',
+    ],
+    techInfo: [React, TypeScript, Redux, StyledComponents, ReactRouter, CSS3],
+    preview: 'https://alameda-khaki.vercel.app/',
+    repo: 'https://github.com/Leninner/alameda-ecommerce',
+  },
   {
     id: 1,
     title: 'Cat Wiki',
@@ -135,7 +163,10 @@ export const projectsData = [
     title: 'Advice Generator',
     description: 'This project gives you a random advice from a list of advices',
     image: advice,
-    userStories: ['Tthe user can reload the page to get a new advice', 'The user can see an advice in a cool way'],
+    userStories: [
+      'Tthe user can reload the page to get a new advice',
+      'The user can see an advice in a cool way',
+    ],
     techInfo: [React, TypeScript, TailwindCSS],
     preview: 'https://advice-generator-ts.vercel.app/',
     repo: 'https://github.com/Leninner/advice-generator-ts',
