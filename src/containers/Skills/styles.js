@@ -26,6 +26,7 @@ export const SkillsContainer = styled.div`
 export const SkillsItems = styled.div`
   display: flex;
   width: 80%;
+  justify-content: center;
   overflow: scroll;
   padding: 2rem 0;
 
